@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Timemanagement.LoginController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="227.0" style="-fx-background-color: #002D62;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="36.0" text="Time Management" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="91.0" text="IST 261" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="224.0" fitWidth="212.0" layoutX="8.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/calendar-image-png-3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="44.0" layoutY="345.0" text="Created by: Andrew Hallett" textFill="WHITE" />
+            <Label layoutX="65.0" layoutY="362.0" text="Copyright © 2020" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="227.0" prefHeight="400.0" prefWidth="374.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #002D62; -fx-border-insets: 10; -fx-border-width: 5;">
+         <children>
+            <Label layoutX="111.0" layoutY="24.0" prefHeight="44.0" prefWidth="152.0" text="LOGIN">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="139.0" text="Username" />
+            <Label layoutX="48.0" layoutY="226.0" text="Password" />
+            <TextField fx:id="userBox" layoutX="114.0" layoutY="135.0" prefHeight="25.0" prefWidth="190.0" />
+            <TextField fx:id="passBox" layoutX="114.0" layoutY="222.0" prefHeight="25.0" prefWidth="190.0" />
+            <Button fx:id="loginButton" layoutX="246.0" layoutY="325.0" mnemonicParsing="false" onAction="#loginButtonPushed" prefHeight="35.0" prefWidth="62.0" text="Login" />
+            <Label fx:id="invalidLogin" layoutX="59.0" layoutY="339.0" prefHeight="17.0" prefWidth="142.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
