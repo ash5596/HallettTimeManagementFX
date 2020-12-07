@@ -16,7 +16,7 @@ public class TimeManagement extends Application {
 
     @Override
     public void start(Stage stage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));  //root of class path -- everytime load fxml
         
         Scene scene = new Scene(root);
         stage.setTitle("Andrew Hallett IST 261 Project");
