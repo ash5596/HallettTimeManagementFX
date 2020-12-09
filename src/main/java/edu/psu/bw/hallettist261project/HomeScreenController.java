@@ -91,7 +91,7 @@ public class HomeScreenController implements Initializable {
     }
     
     @FXML 
-    public void handleExitButtonAction(ActionEvent event) throws FileNotFoundException {
+    public void handleLogoutButtonAction(ActionEvent event) throws FileNotFoundException {
         System.out.println("The EXIT button was clicked");
         PageLoader object = new PageLoader();
         Pane view = object.getScreen("exitScene");

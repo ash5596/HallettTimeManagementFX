@@ -40,10 +40,10 @@ public class LoginController implements Initializable {
 
     @FXML
     Label invalidLogin;
-
+    
 
     @FXML
-    public void loginButtonPushed(ActionEvent event) throws IOException {
+    public void handleButtonOnAction(ActionEvent event) throws IOException {
         //System.out.println("-----LOGIN BUTTON PRESSED-----");
         Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/HomeScreen.fxml"));
         Scene homeScreenScene = new Scene(homeScreenParent);

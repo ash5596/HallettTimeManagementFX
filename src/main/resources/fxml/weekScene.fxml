@@ -1,35 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="400.0" prefWidth="680.0" style="-fx-background-color: #A9A9A9;">
+      <Pane prefHeight="780.0" prefWidth="997.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #000000; -fx-border-width: 5;">
          <children>
-            <Label layoutX="19.0" layoutY="6.0" prefHeight="34.0" prefWidth="63.0" text="Monday" />
-            <Label layoutX="116.0" layoutY="6.0" prefHeight="34.0" prefWidth="63.0" text="Tuesday" />
-            <Label layoutX="206.0" layoutY="6.0" prefHeight="34.0" prefWidth="63.0" text="Wednesday" />
-            <Label layoutX="309.0" layoutY="6.0" prefHeight="34.0" prefWidth="63.0" text="Thursday" />
-            <Label layoutX="418.0" layoutY="6.0" prefHeight="34.0" prefWidth="63.0" text="Friday" />
-            <Label layoutX="504.0" layoutY="6.0" prefHeight="34.0" prefWidth="63.0" text="Saturday" />
-            <Label layoutX="603.0" layoutY="6.0" prefHeight="34.0" prefWidth="63.0" text="Sunday" />
+            <Label layoutX="14.0" layoutY="6.0" prefHeight="35.0" prefWidth="109.0" text="Monday">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="154.0" layoutY="6.0" prefHeight="35.0" prefWidth="101.0" text="Tuesday">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label layoutX="281.0" layoutY="6.0" prefHeight="35.0" prefWidth="146.0" text="Wednesday">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label layoutX="454.0" layoutY="6.0" prefHeight="34.0" prefWidth="146.0" text="Thursday">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label layoutX="622.0" layoutY="6.0" prefHeight="34.0" prefWidth="92.0" text="Friday">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label layoutX="743.0" layoutY="7.0" prefHeight="34.0" prefWidth="101.0" text="Saturday">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label layoutX="891.0" layoutY="6.0" prefHeight="34.0" prefWidth="101.0" text="Sunday">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Pane layoutX="-9.0" layoutY="667.0" prefHeight="120.0" prefWidth="1006.0" style="-fx-background-color: #002D62; -fx-border-color: #000000; -fx-border-width: 5;">
+               <children>
+                  <Button layoutX="422.0" layoutY="44.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="163.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Home Screen">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
          </children>
       </Pane>
-      <GridPane gridLinesVisible="true" layoutY="40.0" prefHeight="360.0" prefWidth="680.0">
+      <GridPane gridLinesVisible="true" layoutY="40.0" prefHeight="627.0" prefWidth="997.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="0.0" prefWidth="93.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="97.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="96.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="102.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="0.0" prefWidth="125.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="142.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="149.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="149.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="135.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="134.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
