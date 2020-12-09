@@ -5,6 +5,7 @@
  */
 package edu.psu.bw.hallettist261project;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,6 +19,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
@@ -25,7 +28,6 @@ import javafx.stage.Stage;
  *
  * @author Andrew
  */
-
 public class LoginController implements Initializable {
     @FXML
     TextField userBox;
@@ -43,7 +45,7 @@ public class LoginController implements Initializable {
     @FXML
     public void loginButtonPushed(ActionEvent event) throws IOException {
         //System.out.println("-----LOGIN BUTTON PRESSED-----");
-        Parent homeScreenParent = FXMLLoader.load(getClass().getResource("HomeScreen.fxml"));
+        Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/HomeScreen.fxml"));
         Scene homeScreenScene = new Scene(homeScreenParent);
         //Getting stage information 
         Stage homeScreenStage = (Stage)((Node) event.getSource()).getScene().getWindow();

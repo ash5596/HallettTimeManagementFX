@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Name: Andrew Hallett
+ * Class: IST 261
+ * Project: HallettIst261Project
  */
 package edu.psu.bw.hallettist261project;
 
@@ -16,7 +16,7 @@ public class TimeManagement extends Application {
 
     @Override
     public void start(Stage stage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));  //root of class path -- everytime load fxml
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/LoginScene.fxml"));  //root of class path -- everytime load fxml
         
         Scene scene = new Scene(root);
         stage.setTitle("Andrew Hallett IST 261 Project");
