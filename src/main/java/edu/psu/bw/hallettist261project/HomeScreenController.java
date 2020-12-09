@@ -47,7 +47,7 @@ public class HomeScreenController implements Initializable {
     Button scheduleButton;
     
     @FXML
-    Button exitButton;
+    Button logoutButton;
 
     
     @FXML BorderPane mainPane;

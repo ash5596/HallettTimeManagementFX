@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="780.0" prefWidth="997.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu.psu.bw.hallettist261project.NotesSceneController">
+<AnchorPane id="AnchorPane" prefHeight="780.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.NotesSceneController">
    <children>
       <Pane prefHeight="780.0" prefWidth="997.0" style="-fx-background-color: #002D62; -fx-border-color: #A9A9A9; -fx-border-width: 10;">
          <children>
@@ -17,17 +16,17 @@
                   <Font name="System Bold" size="64.0" />
                </font>
             </Label>
-            <TextField layoutX="70.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10;" />
-            <Button layoutX="363.0" layoutY="666.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="272.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Home">
+            <TextField layoutX="70.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <Button layoutX="363.0" layoutY="666.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="272.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Home">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <TextField layoutX="569.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10;" />
-            <TextField layoutX="70.0" layoutY="307.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10;" />
-            <TextField layoutX="569.0" layoutY="307.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10;" />
-            <TextField layoutX="70.0" layoutY="479.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10;" />
-            <TextField layoutX="569.0" layoutY="479.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10;" />
+            <TextField layoutX="543.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField layoutX="70.0" layoutY="278.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField layoutX="543.0" layoutY="287.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField layoutX="70.0" layoutY="450.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField layoutX="543.0" layoutY="457.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
          </children>
       </Pane>
    </children>

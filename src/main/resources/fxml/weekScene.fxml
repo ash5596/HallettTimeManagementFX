@@ -42,9 +42,9 @@
                <font>
                   <Font name="System Bold" size="22.0" />
                </font></Label>
-            <Pane layoutX="-9.0" layoutY="667.0" prefHeight="120.0" prefWidth="1006.0" style="-fx-background-color: #002D62; -fx-border-color: #000000; -fx-border-width: 5;">
+            <Pane layoutY="667.0" prefHeight="120.0" prefWidth="997.0" style="-fx-background-color: #002D62; -fx-border-color: #000000; -fx-border-width: 5;">
                <children>
-                  <Button layoutX="422.0" layoutY="44.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="163.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Home Screen">
+                  <Button layoutX="422.0" layoutY="44.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="163.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Home Screen">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>

@@ -43,7 +43,10 @@
             <Label layoutX="46.0" layoutY="139.0" text="Username" />
             <Label layoutX="48.0" layoutY="226.0" text="Password" />
             <TextField fx:id="userBox" layoutX="114.0" layoutY="135.0" prefHeight="25.0" prefWidth="190.0" />
-            <Button fx:id="loginButton" layoutX="246.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleButtonOnAction" prefHeight="35.0" prefWidth="62.0" text="Login" />
+            <Button fx:id="loginButton" layoutX="213.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleButtonOnAction" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
             <Label fx:id="invalidLogin" layoutX="59.0" layoutY="339.0" prefHeight="17.0" prefWidth="142.0" />
             <PasswordField fx:id="passBox" layoutX="115.0" layoutY="222.0" prefHeight="25.0" prefWidth="190.0" />
          </children>
