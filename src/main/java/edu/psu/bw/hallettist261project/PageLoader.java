@@ -15,7 +15,7 @@ import javafx.scene.layout.Pane;
  */
 public class PageLoader {
 
-    private Pane view;
+    public Pane view;
 
     public Pane getScreen(String fileName) throws FileNotFoundException {
 

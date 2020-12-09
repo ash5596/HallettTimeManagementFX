@@ -50,7 +50,7 @@ public class HomeScreenController implements Initializable {
     Button logoutButton;
 
     
-    @FXML BorderPane mainPane;
+    @FXML Pane mainPane;          //check what pane
 
 
     
@@ -59,7 +59,7 @@ public class HomeScreenController implements Initializable {
         System.out.println("The NOTE button was clicked");
         PageLoader object = new PageLoader();
         Pane view = object.getScreen("notesScene");
-        mainPane.setCenter(view);       
+        mainPane.getChildren().addAll(view);      
    
     }
     
@@ -68,7 +68,7 @@ public class HomeScreenController implements Initializable {
         System.out.println("The WEEK button was clicked");
         PageLoader object = new PageLoader();
         Pane view = object.getScreen("weekScene");
-        mainPane.setCenter(view);
+        mainPane.getChildren().addAll(view);
         
     }
     
@@ -77,7 +77,7 @@ public class HomeScreenController implements Initializable {
         System.out.println("The MONTH button was clicked");
         PageLoader object = new PageLoader();
         Pane view = object.getScreen("monthScene");
-        mainPane.setCenter(view);
+        mainPane.getChildren().addAll(view);
         
     }
     
@@ -86,7 +86,7 @@ public class HomeScreenController implements Initializable {
         System.out.println("The SCHEDULE button was clicked");
         PageLoader object = new PageLoader();
         Pane view = object.getScreen("scheduleScene");
-        mainPane.setCenter(view);
+        mainPane.getChildren().addAll(view);
         
     }
     
@@ -95,10 +95,10 @@ public class HomeScreenController implements Initializable {
         System.out.println("The EXIT button was clicked");
         PageLoader object = new PageLoader();
         Pane view = object.getScreen("exitScene");
-        mainPane.setCenter(view);
+        mainPane.getChildren().addAll(view);
         
     }
-
+    
             @Override
     public void initialize(URL url, ResourceBundle rb) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
