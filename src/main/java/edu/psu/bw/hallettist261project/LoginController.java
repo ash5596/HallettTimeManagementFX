@@ -41,11 +41,14 @@ public class LoginController implements Initializable {
     @FXML
     Label invalidLogin;
     
+    @FXML
+    Pane mainPane;
+    
 
     @FXML
-    public void handleButtonOnAction(ActionEvent event) throws IOException {
-        //System.out.println("-----LOGIN BUTTON PRESSED-----");
-        Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/HomeScreen.fxml"));
+    public void handleLoginButtonOnAction(ActionEvent event) throws IOException {
+        System.out.println("----------LOGIN BUTTON PRESSED----------");
+        Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/ScheduleScene.fxml"));
         Scene homeScreenScene = new Scene(homeScreenParent);
         //Getting stage information 
         Stage homeScreenStage = (Stage)((Node) event.getSource()).getScene().getWindow();
@@ -57,6 +60,7 @@ public class LoginController implements Initializable {
    
     }
     
+        
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

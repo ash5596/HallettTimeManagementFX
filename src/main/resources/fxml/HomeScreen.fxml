@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.HomeScreenController">
+<AnchorPane fx:id="homeScreenAnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.HomeScreenController">
     
    <children>
       <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #002D62;">
@@ -25,7 +25,7 @@
                   <Insets left="20.0" top="50.0" />
                </VBox.margin>
             </Label>
-            <Button fx:id="scheduleButton" mnemonicParsing="false" onAction="#handleScheduleButton" prefHeight="55.0" prefWidth="118.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Schedule" textFill="WHITE" translateX="10.0">
+            <Button fx:id="scheduleButton" mnemonicParsing="false" onAction="#handleScheduleButtonAction" prefHeight="55.0" prefWidth="118.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Schedule" textFill="WHITE" translateX="10.0">
                <font>
                   <Font size="16.0" />
                </font>

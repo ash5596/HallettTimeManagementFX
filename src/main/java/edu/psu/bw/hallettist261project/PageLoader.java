@@ -7,6 +7,8 @@ package edu.psu.bw.hallettist261project;
 
 import java.io.FileNotFoundException;
 import java.net.URL;
+import javafx.fxml.FXML;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 /**
@@ -14,7 +16,7 @@ import javafx.scene.layout.Pane;
  * @author Andrew
  */
 public class PageLoader {
-
+   
     public Pane view;
 
     public Pane getScreen(String fileName) throws FileNotFoundException {
