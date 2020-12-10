@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -25,8 +26,11 @@ public class WeekSceneController {
     private AnchorPane weekAnchorPane;
     
     @FXML
+    private Button weekReturnButton;
+    
+    @FXML
     void handleNoteButtonAction(ActionEvent event) throws IOException {
-        System.out.println("---------RETURN BUTTON PRESSED----------");
+        System.out.println("---------NOTE BUTTON PRESSED----------");
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
         
         Scene scene = new Scene(root);
@@ -37,5 +41,11 @@ public class WeekSceneController {
         testStage.show();
 
     }
-
+    
+    @FXML
+    void handleWeekReturnHomeButton(ActionEvent event) {
+        System.out.println("---------RETURN BUTTON PRESSED----------");
+        Stage stage  =(Stage) weekReturnButton.getScene().getWindow();
+        stage.close();
+    }
 }

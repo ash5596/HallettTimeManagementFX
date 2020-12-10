@@ -26,7 +26,7 @@ import javafx.stage.Stage;
 public class HomeScreenController {
 
     @FXML
-    private AnchorPane homeScreenAnchorPane;
+    AnchorPane homeScreenAnchorPane;
 
     @FXML
     private Button scheduleButton;
@@ -46,16 +46,11 @@ public class HomeScreenController {
     @FXML
     void handleLogoutButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------RETURN BUTTON PRESSED----------");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/LogoutScene.fxml"));  //root of class path -- everytime load fxml
-        
-        Scene scene = new Scene(root);
-        Stage testStage =  new Stage();
-        testStage.setTitle("Logout Scene -- Andrew Hallett IST 261 Project");
-        
-        testStage.setScene(scene);
-        testStage.show();
+        Stage stage  =(Stage) logoutButton.getScene().getWindow();
+        stage.close();
+        }
 
-    }
+    
 
     @FXML
     void handleMonthButtonAction(ActionEvent event) throws IOException {

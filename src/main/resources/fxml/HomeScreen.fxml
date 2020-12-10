@@ -6,37 +6,37 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="homeScreenAnchorPane" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.HomeScreenController">
+<AnchorPane fx:id="homeScreenAnchorPane" prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.HomeScreenController">
     
    <children>
-      <Pane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #002D62; -fx-border-width: 15; -fx-border-color: #A9A9A9;">
+      <Pane prefHeight="520.0" prefWidth="800.0" style="-fx-background-color: #002D62; -fx-border-width: 15; -fx-border-color: #A9A9A9;">
          <children>
-            <Button fx:id="scheduleButton" layoutX="52.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleScheduleButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Schedule" textFill="WHITE">
+            <Button fx:id="scheduleButton" layoutX="79.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleScheduleButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Schedule" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" layoutX="241.0" layoutY="35.0" prefHeight="70.0" prefWidth="241.0" text="MENU" textFill="WHITE">
+            <Label alignment="CENTER" layoutX="268.0" layoutY="31.0" prefHeight="70.0" prefWidth="241.0" text="MENU" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="64.0" />
                </font>
             </Label>
-            <Button fx:id="weekButton" layoutX="284.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleWeekButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Week View" textFill="WHITE">
+            <Button fx:id="weekButton" layoutX="311.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleWeekButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Week View" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="noteButton" layoutX="164.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleNoteButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Notes" textFill="WHITE">
+            <Button fx:id="noteButton" layoutX="179.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleNoteButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Notes" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="logoutButton" layoutX="405.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Logout" textFill="WHITE">
+            <Button fx:id="logoutButton" layoutX="428.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Logout" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="monthButton" layoutX="510.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleMonthButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Month View" textFill="WHITE">
+            <Button fx:id="monthButton" layoutX="548.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleMonthButtonAction" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Month View" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>

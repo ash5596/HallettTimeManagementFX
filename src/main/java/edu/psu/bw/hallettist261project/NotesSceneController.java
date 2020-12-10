@@ -52,15 +52,8 @@ public class NotesSceneController {
     @FXML
     void handleNotesHomeButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------RETURN BUTTON PRESSED----------");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/notesScene.fxml"));  //root of class path -- everytime load fxml
-        
-        Scene scene = new Scene(root);
-        Stage testStage =  new Stage();
-        testStage.setTitle("Notes Scene -- Andrew Hallett IST 261 Project");
-        
-        testStage.setScene(scene);
-        testStage.show();
-
+        Stage stage  =(Stage) notesHomeButton.getScene().getWindow();
+        stage.close();
     }
 
     }

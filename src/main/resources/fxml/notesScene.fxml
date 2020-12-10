@@ -7,26 +7,26 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="noteAnchorPane" prefHeight="780.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.NotesSceneController">
+<AnchorPane fx:id="noteAnchorPane" prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.NotesSceneController">
    <children>
-      <Pane prefHeight="780.0" prefWidth="997.0" style="-fx-background-color: #002D62; -fx-border-color: #A9A9A9; -fx-border-width: 10;">
+      <Pane prefHeight="520.0" prefWidth="800.0" style="-fx-background-color: #002D62; -fx-border-color: #A9A9A9; -fx-border-width: 10;">
          <children>
-            <Label layoutX="395.0" layoutY="14.0" text="NOTES" textFill="WHITE">
+            <Label layoutX="310.0" layoutY="14.0" text="NOTES" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="64.0" />
+                  <Font name="System Bold" size="48.0" />
                </font>
             </Label>
-            <TextField fx:id="notesTextOne" layoutX="70.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <Button fx:id="notesHomeButton" layoutX="363.0" layoutY="666.0" mnemonicParsing="false" onAction="#handleNotesHomeButtonAction" prefHeight="69.0" prefWidth="272.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Home">
+            <TextField fx:id="notesTextOne" layoutX="44.0" layoutY="91.0" prefHeight="80.0" prefWidth="284.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <Button fx:id="notesHomeButton" layoutX="323.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleNotesHomeButtonAction" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Home">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <TextField fx:id="notesTextTwo" layoutX="543.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField fx:id="notesTextThree" layoutX="70.0" layoutY="278.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField fx:id="notesTextFour" layoutX="543.0" layoutY="287.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField fx:id="notesTextFive" layoutX="70.0" layoutY="450.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField fx:id="notesTextSix" layoutX="543.0" layoutY="457.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextTwo" layoutX="461.0" layoutY="91.0" prefHeight="80.0" prefWidth="284.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextThree" layoutX="44.0" layoutY="230.0" prefHeight="80.0" prefWidth="284.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextFour" layoutX="455.0" layoutY="230.0" prefHeight="80.0" prefWidth="284.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextFive" layoutX="44.0" layoutY="360.0" prefHeight="80.0" prefWidth="284.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextSix" layoutX="458.0" layoutY="360.0" prefHeight="80.0" prefWidth="290.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
          </children>
       </Pane>
    </children>

@@ -36,16 +36,11 @@ public class ScheduleController {
     @FXML
     void testReturnButtonHandleOnAction(ActionEvent event) throws IOException {
         System.out.println("---------RETURN BUTTON PRESSED----------");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/HomeScreen.fxml"));  //root of class path -- everytime load fxml
-        
-        Scene scene = new Scene(root);
-        Stage testStage =  new Stage();
-        testStage.setTitle("Schedule Scene -- Andrew Hallett IST 261 Project");
-        
-        testStage.setScene(scene);
-        testStage.show();
-
+        Stage stage  =(Stage) testReturnButton.getScene().getWindow();
+        stage.close();
     }
+
+    
     
 }
         
