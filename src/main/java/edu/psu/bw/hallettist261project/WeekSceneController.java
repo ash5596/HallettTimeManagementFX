@@ -1,11 +1,11 @@
+package edu.psu.bw.hallettist261project;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.psu.bw.hallettist261project;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -13,38 +13,25 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
+ * FXML Controller class
  *
  * @author Andrew
  */
-
-
-
-
-public class ScheduleController {
+public class WeekSceneController {
 
     @FXML
-    private AnchorPane scheduleAnchorPane;
-
-    @FXML
-    private Button testReturnButton;
-
-
+    private AnchorPane weekAnchorPane;
     
     @FXML
-    void testReturnButtonHandleOnAction(ActionEvent event) throws IOException {
+    void handleNoteButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------RETURN BUTTON PRESSED----------");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/HomeScreen.fxml"));  //root of class path -- everytime load fxml
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
         
         Scene scene = new Scene(root);
         Stage testStage =  new Stage();
@@ -54,9 +41,5 @@ public class ScheduleController {
         testStage.show();
 
     }
-    
-}
-        
-   
-    
 
+}

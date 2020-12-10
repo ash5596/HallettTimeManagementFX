@@ -48,7 +48,8 @@ public class LoginController implements Initializable {
     @FXML
     public void handleLoginButtonOnAction(ActionEvent event) throws IOException {
         System.out.println("----------LOGIN BUTTON PRESSED----------");
-        Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/ScheduleScene.fxml"));
+        //Loading the new screen once the login button is pressed
+        Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/HomeScreen.fxml"));
         Scene homeScreenScene = new Scene(homeScreenParent);
         //Getting stage information 
         Stage homeScreenStage = (Stage)((Node) event.getSource()).getScene().getWindow();

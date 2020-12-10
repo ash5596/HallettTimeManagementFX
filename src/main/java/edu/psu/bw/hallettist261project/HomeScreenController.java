@@ -32,81 +32,96 @@ import javafx.stage.Stage;
  *
  * @author Andrew
  */
-public class HomeScreenController implements Initializable {
-   
-    
-    @FXML
-    Button notesButton;
-    
-    @FXML
-    Button weekButton;
-    
-    @FXML
-    Button monthButton;
-    
-    @FXML
-    Button scheduleButton;
-    
-    @FXML
-    Button logoutButton;
-    
-    @FXML
-    AnchorPane menuAnchorPane;
 
-    
-    @FXML 
-    Pane mainPane;          //check what pane
+public class HomeScreenController {
 
-   
     @FXML
-    public void handleNoteButtonAction(ActionEvent event) throws FileNotFoundException {
-        System.out.println("The NOTE button was clicked");
-        PageLoader object = new PageLoader();
-        Pane view = object.getScreen("notesScene");
-        mainPane.getChildren().addAll(view);      
-   
-    }
-    
-    @FXML 
-    public void handleWeekButtonAction(ActionEvent event) throws FileNotFoundException {
-        System.out.println("The WEEK button was clicked");
-        PageLoader object = new PageLoader();
-        Pane view = object.getScreen("weekScene");
-        mainPane.getChildren().addAll(view);
+    private AnchorPane homeScreenAnchorPane;
+
+    @FXML
+    private Button scheduleButton;
+
+    @FXML
+    private Button weekButton;
+
+    @FXML
+    private Button monthButton;
+
+    @FXML
+    private Button noteButton;
+
+    @FXML
+    private Button logoutButton;
+
+    @FXML
+    void handleLogoutButtonAction(ActionEvent event) throws IOException {
+        System.out.println("---------RETURN BUTTON PRESSED----------");
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/LogoutScene.fxml"));  //root of class path -- everytime load fxml
         
-    }
-    
-    @FXML 
-    public void handleMonthButtonAction(ActionEvent event) throws FileNotFoundException {
-        System.out.println("The MONTH button was clicked");
-        PageLoader object = new PageLoader();
-        Pane view = object.getScreen("monthScene");
-        mainPane.getChildren().addAll(view);
+        Scene scene = new Scene(root);
+        Stage testStage =  new Stage();
+        testStage.setTitle("Andrew Hallett IST 261 Project");
         
-    }
-    
-    @FXML 
-    public void handleScheduleButtonAction(ActionEvent event) throws FileNotFoundException {
-        System.out.println("The SCHEDULE button was clicked");
-        PageLoader object = new PageLoader();
-        Pane view = object.getScreen("scheduleScene");
-        mainPane.getChildren().addAll(view);
-        
-    }
-    
-    @FXML 
-    public void handleLogoutButtonAction(ActionEvent event) throws FileNotFoundException {
-        System.out.println("The EXIT button was clicked");
-        PageLoader object = new PageLoader();
-        Pane view = object.getScreen("exitScene");
-        mainPane.getChildren().addAll(view);
-        
-    }
-    
-            @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        testStage.setScene(scene);
+        testStage.show();
+
     }
 
-   
+    @FXML
+    void handleMonthButtonAction(ActionEvent event) throws IOException {
+        System.out.println("---------RETURN BUTTON PRESSED----------");
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/MonthScene.fxml"));  //root of class path -- everytime load fxml
+        
+        Scene scene = new Scene(root);
+        Stage testStage =  new Stage();
+        testStage.setTitle("Andrew Hallett IST 261 Project");
+        
+        testStage.setScene(scene);
+        testStage.show();
+
+    }
+
+    @FXML
+    void handleNoteButtonAction(ActionEvent event) throws IOException {
+        System.out.println("---------RETURN BUTTON PRESSED----------");
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/notesScene.fxml"));  //root of class path -- everytime load fxml
+        
+        Scene scene = new Scene(root);
+        Stage testStage =  new Stage();
+        testStage.setTitle("Andrew Hallett IST 261 Project");
+        
+        testStage.setScene(scene);
+        testStage.show();
+
+    }
+
+    @FXML
+    void handleScheduleButtonAction(ActionEvent event) throws IOException {
+        System.out.println("----------LOGIN BUTTON PRESSED----------");
+        //Loading the new screen once the login button is pressed
+        Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/ScheduleScene.fxml"));
+        Scene homeScreenScene = new Scene(homeScreenParent);
+        //Getting stage information 
+        Stage homeScreenStage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        
+        homeScreenStage.setScene(homeScreenScene);
+        
+        homeScreenStage.show();
+
+    }
+
+    @FXML
+    void handleWeekButtonAction(ActionEvent event) throws IOException {
+        System.out.println("---------RETURN BUTTON PRESSED----------");
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
+        
+        Scene scene = new Scene(root);
+        Stage testStage =  new Stage();
+        testStage.setTitle("Andrew Hallett IST 261 Project");
+        
+        testStage.setScene(scene);
+        testStage.show();
+
+    }
+
 }
