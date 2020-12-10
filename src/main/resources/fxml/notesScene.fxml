@@ -16,17 +16,17 @@
                   <Font name="System Bold" size="64.0" />
                </font>
             </Label>
-            <TextField layoutX="70.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextOne" layoutX="70.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
             <Button fx:id="notesHomeButton" layoutX="363.0" layoutY="666.0" mnemonicParsing="false" onAction="#handleNotesHomeButtonAction" prefHeight="69.0" prefWidth="272.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Home">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <TextField layoutX="543.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField layoutX="70.0" layoutY="278.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField layoutX="543.0" layoutY="287.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField layoutX="70.0" layoutY="450.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <TextField layoutX="543.0" layoutY="457.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextTwo" layoutX="543.0" layoutY="131.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextThree" layoutX="70.0" layoutY="278.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextFour" layoutX="543.0" layoutY="287.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextFive" layoutX="70.0" layoutY="450.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+            <TextField fx:id="notesTextSix" layoutX="543.0" layoutY="457.0" prefHeight="95.0" prefWidth="363.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
          </children>
       </Pane>
    </children>

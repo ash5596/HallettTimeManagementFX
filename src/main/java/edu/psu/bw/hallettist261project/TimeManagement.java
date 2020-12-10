@@ -29,7 +29,7 @@ public class TimeManagement extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/LoginScene.fxml"));  //root of class path -- everytime load fxml
         
         Scene scene = new Scene(root);
-        stage.setTitle("Andrew Hallett IST 261 Project");
+        stage.setTitle("Login Scene -- Andrew Hallett IST 261 Project");
         
         stage.setScene(scene);
         stage.show();

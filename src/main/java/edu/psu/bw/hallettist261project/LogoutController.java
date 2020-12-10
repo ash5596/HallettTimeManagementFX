@@ -39,7 +39,7 @@ public class LogoutController {
         
         Scene scene = new Scene(root);
         Stage testStage =  new Stage();
-        testStage.setTitle("Andrew Hallett IST 261 Project");
+        testStage.setTitle("Logout Scene -- Andrew Hallett IST 261 Project");
         
         testStage.setScene(scene);
         testStage.show();

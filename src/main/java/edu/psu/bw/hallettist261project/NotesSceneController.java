@@ -18,6 +18,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -35,7 +36,25 @@ public class NotesSceneController {
     private AnchorPane noteAnchorPane;
 
     @FXML
+    private TextField notesTextOne;
+
+    @FXML
     private Button notesHomeButton;
+
+    @FXML
+    private TextField notesTextTwo;
+
+    @FXML
+    private TextField notesTextThree;
+
+    @FXML
+    private TextField notesTextFour;
+
+    @FXML
+    private TextField notesTextFive;
+
+    @FXML
+    private TextField notesTextSix;
 
     @FXML
     void handleNotesHomeButtonAction(ActionEvent event) throws IOException {
@@ -44,7 +63,7 @@ public class NotesSceneController {
         
         Scene scene = new Scene(root);
         Stage testStage =  new Stage();
-        testStage.setTitle("Andrew Hallett IST 261 Project");
+        testStage.setTitle("Notes Scene -- Andrew Hallett IST 261 Project");
         
         testStage.setScene(scene);
         testStage.show();
