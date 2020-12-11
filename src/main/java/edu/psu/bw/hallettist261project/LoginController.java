@@ -49,24 +49,35 @@ public class LoginController implements Initializable {
 
     @FXML
     public void handleLoginButtonOnAction(ActionEvent event) throws IOException {
+        //Checking if the username and password are correct
+        if(userBox.getText().equals("Andrew") && passBox.getText().equals("pass")) {
         System.out.println("----------LOGIN BUTTON PRESSED----------");
         //Loading the new screen once the login button is pressed
         Parent homeScreenParent = FXMLLoader.load(getClass().getResource("/fxml/HomeScreen.fxml"));
         Scene homeScreenScene = new Scene(homeScreenParent);
         //Getting stage information 
         Stage homeScreenStage = (Stage)((Node) event.getSource()).getScene().getWindow();
-        
         homeScreenStage.setScene(homeScreenScene);
-        
         homeScreenStage.show();
-        
+        }
+        else {
+            invalidLogin.setText("LOGIN FAILED, TRY AGAIN.");
+        }
+
    
     }
     
-        
+    @FXML
+    //Method to clear the username and password text fields when clear button clicked
+    void handleClearLoginButton(ActionEvent event) {
+        userBox.clear();
+        passBox.clear();
+
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //this.loginImage = new ImageView("Images/calendar-image-png-3.jpg");
     }    
-    
+        
 }

@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -23,7 +24,7 @@ import javafx.stage.Stage;
 
 
 
-public class ScheduleController {
+public class ScheduleControllerTest {
 
     @FXML
     private AnchorPane scheduleAnchorPane;
@@ -31,11 +32,10 @@ public class ScheduleController {
     @FXML
     private Button testReturnButton;
 
-
     
     @FXML
     void testReturnButtonHandleOnAction(ActionEvent event) throws IOException {
-        System.out.println("---------RETURN BUTTON PRESSED----------");
+        System.out.println("---------RETURN (SCHEDULE SCENE) BUTTON PRESSED----------");
         Stage stage  =(Stage) testReturnButton.getScene().getWindow();
         stage.close();
     }
@@ -43,7 +43,3 @@ public class ScheduleController {
     
     
 }
-        
-   
-    
-

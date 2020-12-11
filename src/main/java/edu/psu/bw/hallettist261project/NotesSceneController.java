@@ -51,7 +51,7 @@ public class NotesSceneController {
 
     @FXML
     void handleNotesHomeButtonAction(ActionEvent event) throws IOException {
-        System.out.println("---------RETURN BUTTON PRESSED----------");
+        System.out.println("---------RETURN (NOTESCENE) BUTTON PRESSED----------");
         Stage stage  =(Stage) notesHomeButton.getScene().getWindow();
         stage.close();
     }

@@ -44,8 +44,9 @@ public class HomeScreenController {
     private Button logoutButton;
 
     @FXML
+    //Method that will close the application when the logout button is clicked
     void handleLogoutButtonAction(ActionEvent event) throws IOException {
-        System.out.println("---------RETURN BUTTON PRESSED----------");
+        System.out.println("---------LOGOUT BUTTON PRESSED----------");
         Stage stage  =(Stage) logoutButton.getScene().getWindow();
         stage.close();
         }
@@ -53,59 +54,64 @@ public class HomeScreenController {
     
 
     @FXML
+    //Method that will display the month scene when the month button is clicked 
     void handleMonthButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------MONTH BUTTON PRESSED----------");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/MonthScene.fxml"));  //root of class path -- everytime load fxml
+        Parent monthRoot = FXMLLoader.load(getClass().getResource("/fxml/MonthScene.fxml"));  //root of class path -- everytime load fxml
         
-        Scene scene = new Scene(root);
-        Stage testStage =  new Stage();
-        testStage.setTitle("Month Scene -- Andrew Hallett IST 261 Project");
+        Scene monthScene = new Scene(monthRoot);
+        Stage monthStage =  new Stage();
+        monthStage.setTitle("Month Scene -- Andrew Hallett IST 261 Project");
         
-        testStage.setScene(scene);
-        testStage.show();
+        monthStage.setScene(monthScene);
+        monthStage.show();
 
     }
 
     @FXML
+    //Method that will display the note scene when the note button is clicked 
     void handleNoteButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------NOTE BUTTON PRESSED----------");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/notesScene.fxml"));  //root of class path -- everytime load fxml
+        Parent noteRoot = FXMLLoader.load(getClass().getResource("/fxml/notesScene.fxml"));  //root of class path -- everytime load fxml
         
-        Scene scene = new Scene(root);
-        Stage testStage =  new Stage();
-        testStage.setTitle("Note Scene -- Andrew Hallett IST 261 Project");
+        Scene noteScene = new Scene(noteRoot);
+        Stage noteStage =  new Stage();
+        noteStage.setTitle("Note Scene -- Andrew Hallett IST 261 Project");
         
-        testStage.setScene(scene);
-        testStage.show();
+        noteStage.setScene(noteScene);
+        noteStage.show();
 
     }
 
     @FXML
+    //Method that will load the schedule scene when the schedule button is clciked 
     void handleScheduleButtonAction(ActionEvent event) throws IOException {
-        System.out.println("----------SCHEDULE BUTTON PRESSED----------");
+        System.out.println("----------SCHEDULE (MAINSCREEN) BUTTON PRESSED----------");
         //Loading the new screen once the login button is pressed
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/ScheduleScene.fxml"));
-        Scene scene = new Scene(root);
+        Parent scheduleRoot = FXMLLoader.load(getClass().getResource("/fxml/ScheduleScene.fxml"));
+        
+        Scene scheduleScene = new Scene(scheduleRoot);
         //Getting stage information 
-        Stage testStage = new Stage();
-        testStage.setTitle("Schedule Scene -- Andrew Hallett IST 261 Project");
+        Stage scheduleStage = new Stage();
+        scheduleStage.setTitle("Schedule Scene -- Andrew Hallett IST 261 Project");
        
-        testStage.setScene(scene);
-        testStage.show();
+        scheduleStage.setScene(scheduleScene);
+        scheduleStage.show();
 
     }
 
     @FXML
+    //Method that will load the week scene when the note button is clicked 
     void handleWeekButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------WEEK BUTTON PRESSED----------");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
+        Parent weekRoot = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
         
-        Scene scene = new Scene(root);
-        Stage testStage =  new Stage();
-        testStage.setTitle("Week Scene -- Andrew Hallett IST 261 Project");
+        Scene weekScene = new Scene(weekRoot);
+        Stage weekStage =  new Stage();
+        weekStage.setTitle("Week Scene -- Andrew Hallett IST 261 Project");
         
-        testStage.setScene(scene);
-        testStage.show();
+        weekStage.setScene(weekScene);
+        weekStage.show();
 
     }
 
