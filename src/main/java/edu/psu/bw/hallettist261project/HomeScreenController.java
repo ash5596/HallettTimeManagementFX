@@ -46,7 +46,7 @@ public class HomeScreenController {
     @FXML
     //Method that will close the application when the logout button is clicked
     void handleLogoutButtonAction(ActionEvent event) throws IOException {
-        System.out.println("---------LOGOUT BUTTON PRESSED----------");
+        System.out.println("---------LOGOUT BUTTON PRESSED----------GOODBYE----------");
         Stage stage  =(Stage) logoutButton.getScene().getWindow();
         stage.close();
         }

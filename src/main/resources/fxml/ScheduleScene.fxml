@@ -135,7 +135,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </RadioButton>
-      <TextField layoutX="376.0" layoutY="41.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #002D62; -fx-border-width: 5;" />
+      <TextField fx:id="createEventTextField" layoutX="376.0" layoutY="41.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #002D62; -fx-border-width: 5;" />
       <Separator layoutX="232.0" layoutY="230.0" prefHeight="17.0" prefWidth="549.0" style="-fx-background-color: #002D62;" />
       <Button layoutX="232.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Monday" textFill="WHITE">
          <effect>

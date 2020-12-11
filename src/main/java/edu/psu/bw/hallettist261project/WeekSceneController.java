@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -27,6 +28,70 @@ public class WeekSceneController {
     
     @FXML
     private Button weekReturnButton;
+        @FXML
+    private TextField mondayTextOne;
+
+    @FXML
+    private TextField mondayTextTwo;
+
+    @FXML
+    private TextField mondayTextThree;
+
+    @FXML
+    private TextField tuesdayTextOne;
+
+    @FXML
+    private TextField tuesdayTextTwo;
+
+    @FXML
+    private TextField tuesdayTextThree;
+
+    @FXML
+    private TextField wednesdayTextOne;
+
+    @FXML
+    private TextField wednesdayTextTwo;
+
+    @FXML
+    private TextField wednesdayTextThree;
+
+    @FXML
+    private TextField thursdayTextOne;
+
+    @FXML
+    private TextField thursdayTextTwo;
+
+    @FXML
+    private TextField thursdayTextThree;
+
+    @FXML
+    private TextField fridayTextOne;
+
+    @FXML
+    private TextField fridayTextTwo;
+
+    @FXML
+    private TextField fridayTextThree;
+
+    @FXML
+    private TextField saturdayTextOne;
+
+    @FXML
+    private TextField saturdayTextTwo;
+
+    @FXML
+    private TextField saturdayTextThree;
+
+    @FXML
+    private TextField sundayTextOne;
+
+    @FXML
+    private TextField sundayTextTwo;
+
+    @FXML
+    private TextField sundayTextThree;
+
+
     
     @FXML
     void handleNoteButtonAction(ActionEvent event) throws IOException {
