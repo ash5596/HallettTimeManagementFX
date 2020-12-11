@@ -24,72 +24,15 @@ import javafx.stage.Stage;
 public class WeekSceneController {
 
     @FXML
-    private AnchorPane weekAnchorPane;
-    
+    private AnchorPane weekAnchorPane;  
     @FXML
     private Button weekReturnButton;
-        @FXML
-    private TextField mondayTextOne;
-
     @FXML
-    private TextField mondayTextTwo;
-
+    private TextField mondayTextOne, mondayTextTwo, mondayTextThree, tuesdayTextOne, tuesdayTextTwo, tuesdayTextThree;
     @FXML
-    private TextField mondayTextThree;
-
+    private TextField wednesdayTextOne, wednesdayTextTwo, wednesdayTextThree, thursdayTextOne, thursdayTextTwo, thursdayTextThree;
     @FXML
-    private TextField tuesdayTextOne;
-
-    @FXML
-    private TextField tuesdayTextTwo;
-
-    @FXML
-    private TextField tuesdayTextThree;
-
-    @FXML
-    private TextField wednesdayTextOne;
-
-    @FXML
-    private TextField wednesdayTextTwo;
-
-    @FXML
-    private TextField wednesdayTextThree;
-
-    @FXML
-    private TextField thursdayTextOne;
-
-    @FXML
-    private TextField thursdayTextTwo;
-
-    @FXML
-    private TextField thursdayTextThree;
-
-    @FXML
-    private TextField fridayTextOne;
-
-    @FXML
-    private TextField fridayTextTwo;
-
-    @FXML
-    private TextField fridayTextThree;
-
-    @FXML
-    private TextField saturdayTextOne;
-
-    @FXML
-    private TextField saturdayTextTwo;
-
-    @FXML
-    private TextField saturdayTextThree;
-
-    @FXML
-    private TextField sundayTextOne;
-
-    @FXML
-    private TextField sundayTextTwo;
-
-    @FXML
-    private TextField sundayTextThree;
+    private TextField fridayTextOne, fridayTextTwo,fridayTextThree, saturdayTextOne,saturdayTextTwo, saturdayTextThree, sundayTextOne, sundayTextTwo, sundayTextThree;
 
 
     
@@ -112,5 +55,5 @@ public class WeekSceneController {
         System.out.println("---------RETURN BUTTON PRESSED----------");
         Stage stage  =(Stage) weekReturnButton.getScene().getWindow();
         stage.close();
-    }
+    }   
 }
