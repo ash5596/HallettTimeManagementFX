@@ -20,18 +20,24 @@ public class TimeManagement extends Application {
     Button loginButton;
                
     @Override
-    public void start(Stage stage) throws Exception{
+    //Method to display the first screen the user will see when loging in
+    public void start(Stage loginStage) throws Exception{
         Parent loginRoot = FXMLLoader.load(getClass().getResource("/fxml/LoginScene.fxml"));  //root of class path -- everytime load fxml
-        
+        //Creatin scene
         Scene loginScene = new Scene(loginRoot);
-        stage.setTitle("Login Scene -- Andrew Hallett IST 261 Project");
-        
-        stage.setScene(loginScene);
-        stage.show();
+        //Setting title
+        loginStage.setTitle("Login Scene -- Andrew Hallett IST 261 Project");
+        //Not allowing resizable
+        loginStage.resizableProperty().setValue(Boolean.FALSE);
+        //Displaing scene
+        loginStage.setScene(loginScene);
+        //Setting scene to display in center of screen
+        loginStage.centerOnScreen();
+        loginStage.show();
         
           
     }
-       
+    //Main method 
     public static void main(String[] args) {
         launch();
     }

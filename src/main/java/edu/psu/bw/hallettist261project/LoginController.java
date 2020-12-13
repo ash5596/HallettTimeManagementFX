@@ -57,8 +57,13 @@ public class LoginController implements Initializable {
         Scene homeScreenScene = new Scene(homeScreenParent);
         //Getting stage information 
         Stage homeScreenStage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        //Showing the scene
         homeScreenStage.setScene(homeScreenScene);
         homeScreenStage.show();
+        //Setting scene to display in center of screen
+        homeScreenStage.centerOnScreen();
+        //Disabling resizable
+        homeScreenStage.resizableProperty().setValue(Boolean.FALSE);
         }
         else {
             invalidLogin.setText("LOGIN FAILED, TRY AGAIN.");

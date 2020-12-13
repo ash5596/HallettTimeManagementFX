@@ -38,22 +38,30 @@ public class WeekSceneController {
     
     @FXML
     void handleNoteButtonAction(ActionEvent event) throws IOException {
+        //Testing
         System.out.println("---------NOTE BUTTON PRESSED----------");
+        //Getting fxml file for scene
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
-        
-        Scene scene = new Scene(root);
-        Stage testStage =  new Stage();
-        testStage.setTitle("Week Scene -- Andrew Hallett IST 261 Project");
-        
-        testStage.setScene(scene);
-        testStage.show();
+        //Creating scene
+        Scene weekScene = new Scene(root);
+        Stage weekStage =  new Stage();
+        //Title
+        weekStage.setTitle("Week Scene -- Andrew Hallett IST 261 Project");
+        //Displaying the weekstage
+        weekStage.setScene(weekScene);
+        //Setting scene to display in center of screen
+        weekStage.centerOnScreen();
+        weekStage.show();
 
     }
     
     @FXML
+    //Method to close the week scene and bring user back to home screen when button is clicked 
     void handleWeekReturnHomeButton(ActionEvent event) {
+        //Testing
         System.out.println("---------RETURN BUTTON PRESSED----------");
         Stage stage  =(Stage) weekReturnButton.getScene().getWindow();
+        //closing the scene
         stage.close();
     }   
 }

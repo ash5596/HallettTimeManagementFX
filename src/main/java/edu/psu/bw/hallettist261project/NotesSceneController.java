@@ -51,9 +51,14 @@ public class NotesSceneController {
 
     @FXML
     void handleNotesHomeButtonAction(ActionEvent event) throws IOException {
+        //Testing
         System.out.println("---------RETURN (NOTESCENE) BUTTON PRESSED----------");
-        Stage stage  =(Stage) notesHomeButton.getScene().getWindow();
-        stage.close();
+        Stage noteStage  =(Stage) notesHomeButton.getScene().getWindow();
+        //Disabling resizing
+        noteStage.resizableProperty().setValue(Boolean.FALSE);
+        //Setting scene to display in center of screen
+        noteStage.centerOnScreen();
+        noteStage.close();
     }
 
     }

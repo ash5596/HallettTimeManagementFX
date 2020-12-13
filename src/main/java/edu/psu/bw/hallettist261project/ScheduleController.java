@@ -37,9 +37,16 @@ public class ScheduleController {
     TextField createEventTextField;
    
     @FXML
+    //Method to change close the scheduler scene and bring user back to home screen
     void testReturnButtonHandleOnAction(ActionEvent event) throws IOException {
+        //Testing
         System.out.println("---------RETURN (SCHEDULE SCENE) BUTTON PRESSED----------");
-        Stage stage  =(Stage) testReturnButton.getScene().getWindow();
-        stage.close();
+        Stage scheduleStage  =(Stage) testReturnButton.getScene().getWindow();
+        //Disabaling resize
+        scheduleStage.resizableProperty().setValue(Boolean.FALSE);
+        //Setting scene to display in center of screen
+        scheduleStage.centerOnScreen();
+        //closing scene
+        scheduleStage.close();
     }
 }

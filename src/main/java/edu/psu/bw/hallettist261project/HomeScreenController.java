@@ -62,7 +62,7 @@ public class HomeScreenController {
         Scene monthScene = new Scene(monthRoot);
         Stage monthStage =  new Stage();
         monthStage.setTitle("Month Scene -- Andrew Hallett IST 261 Project");
-        
+        monthStage.resizableProperty().setValue(Boolean.FALSE);
         monthStage.setScene(monthScene);
         monthStage.show();
 
@@ -77,7 +77,7 @@ public class HomeScreenController {
         Scene noteScene = new Scene(noteRoot);
         Stage noteStage =  new Stage();
         noteStage.setTitle("Note Scene -- Andrew Hallett IST 261 Project");
-        
+        noteStage.resizableProperty().setValue(Boolean.FALSE);
         noteStage.setScene(noteScene);
         noteStage.show();
 
@@ -94,7 +94,7 @@ public class HomeScreenController {
         //Getting stage information 
         Stage scheduleStage = new Stage();
         scheduleStage.setTitle("Schedule Scene -- Andrew Hallett IST 261 Project");
-       
+        scheduleStage.resizableProperty().setValue(Boolean.FALSE);
         scheduleStage.setScene(scheduleScene);
         scheduleStage.show();
 
@@ -103,14 +103,20 @@ public class HomeScreenController {
     @FXML
     //Method that will load the week scene when the note button is clicked 
     void handleWeekButtonAction(ActionEvent event) throws IOException {
+        //testing
         System.out.println("---------WEEK BUTTON PRESSED----------");
+        //Getting scene
         Parent weekRoot = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
-        
         Scene weekScene = new Scene(weekRoot);
         Stage weekStage =  new Stage();
+        //Title of scene
         weekStage.setTitle("Week Scene -- Andrew Hallett IST 261 Project");
-        
+        //Not allowing resizing of window
+        weekStage.resizableProperty().setValue(Boolean.FALSE);
+        //Dispaying
         weekStage.setScene(weekScene);
+        //Setting scene to display in center of screen
+        weekStage.centerOnScreen();
         weekStage.show();
 
     }
