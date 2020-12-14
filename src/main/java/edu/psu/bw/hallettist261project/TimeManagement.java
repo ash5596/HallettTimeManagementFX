@@ -5,6 +5,7 @@
  */
 package edu.psu.bw.hallettist261project;
 
+import java.lang.System.Logger;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXML;
@@ -13,17 +14,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.apache.log4j.PropertyConfigurator;
 
 public class TimeManagement extends Application {
-    
-    @FXML 
+
+    @FXML
     Button loginButton;
-               
+    
     @Override
     //Method to display the first screen the user will see when loging in
-    public void start(Stage loginStage) throws Exception{
+    public void start(Stage loginStage) throws Exception {
         Parent loginRoot = FXMLLoader.load(getClass().getResource("/fxml/LoginScene.fxml"));  //root of class path -- everytime load fxml
-        //Creatin scene
+        //Creating scene
         Scene loginScene = new Scene(loginRoot);
         //Setting title
         loginStage.setTitle("Login Scene -- Andrew Hallett IST 261 Project");
@@ -34,11 +36,12 @@ public class TimeManagement extends Application {
         //Setting scene to display in center of screen
         loginStage.centerOnScreen();
         loginStage.show();
-        
-          
+
     }
     //Main method 
     public static void main(String[] args) {
+        //Logger info
+        PropertyConfigurator.configure("log4j.properties");         
         launch();
     }
 

@@ -7,11 +7,13 @@ package edu.psu.bw.hallettist261project;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -24,18 +26,25 @@ import javafx.stage.Stage;
 public class WeekSceneController {
 
     @FXML
-    private AnchorPane weekAnchorPane;  
+    private AnchorPane weekAnchorPane;
     @FXML
     private Button weekReturnButton;
-    @FXML
-    private TextField mondayTextOne, mondayTextTwo, mondayTextThree, tuesdayTextOne, tuesdayTextTwo, tuesdayTextThree;
-    @FXML
-    private TextField wednesdayTextOne, wednesdayTextTwo, wednesdayTextThree, thursdayTextOne, thursdayTextTwo, thursdayTextThree;
-    @FXML
-    private TextField fridayTextOne, fridayTextTwo,fridayTextThree, saturdayTextOne,saturdayTextTwo, saturdayTextThree, sundayTextOne, sundayTextTwo, sundayTextThree;
-
-
     
+    @FXML
+    private Label mondayLabelOne;
+
+    @FXML
+    private Label mondayLabelTwo;
+
+    @FXML
+    private Label mondayLabelThree;
+    
+    @FXML
+    TextField createEventTextField;
+    
+    @FXML
+    TextField nameOfEvent;
+
     @FXML
     void handleNoteButtonAction(ActionEvent event) throws IOException {
         //Testing
@@ -44,7 +53,7 @@ public class WeekSceneController {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
         //Creating scene
         Scene weekScene = new Scene(root);
-        Stage weekStage =  new Stage();
+        Stage weekStage = new Stage();
         //Title
         weekStage.setTitle("Week Scene -- Andrew Hallett IST 261 Project");
         //Displaying the weekstage
@@ -54,14 +63,14 @@ public class WeekSceneController {
         weekStage.show();
 
     }
-    
+
     @FXML
     //Method to close the week scene and bring user back to home screen when button is clicked 
     void handleWeekReturnHomeButton(ActionEvent event) {
         //Testing
         System.out.println("---------RETURN BUTTON PRESSED----------");
-        Stage stage  =(Stage) weekReturnButton.getScene().getWindow();
+        Stage stage = (Stage) weekReturnButton.getScene().getWindow();
         //closing the scene
         stage.close();
-    }   
+    }
 }

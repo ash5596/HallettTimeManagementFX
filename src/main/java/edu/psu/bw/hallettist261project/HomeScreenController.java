@@ -3,11 +3,10 @@
  * Class: IST 261
  * Project: HallettIst261Project
  */
-
 package edu.psu.bw.hallettist261project;
 
-
 import java.io.IOException;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +21,6 @@ import javafx.stage.Stage;
  *
  * @author Andrew
  */
-
 public class HomeScreenController {
 
     @FXML
@@ -47,20 +45,18 @@ public class HomeScreenController {
     //Method that will close the application when the logout button is clicked
     void handleLogoutButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------LOGOUT BUTTON PRESSED----------GOODBYE----------");
-        Stage stage  =(Stage) logoutButton.getScene().getWindow();
-        stage.close();
-        }
-
-    
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        stage.close();       
+    }
 
     @FXML
     //Method that will display the month scene when the month button is clicked 
     void handleMonthButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------MONTH BUTTON PRESSED----------");
         Parent monthRoot = FXMLLoader.load(getClass().getResource("/fxml/MonthScene.fxml"));  //root of class path -- everytime load fxml
-        
+
         Scene monthScene = new Scene(monthRoot);
-        Stage monthStage =  new Stage();
+        Stage monthStage = new Stage();
         monthStage.setTitle("Month Scene -- Andrew Hallett IST 261 Project");
         monthStage.resizableProperty().setValue(Boolean.FALSE);
         monthStage.setScene(monthScene);
@@ -73,9 +69,9 @@ public class HomeScreenController {
     void handleNoteButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------NOTE BUTTON PRESSED----------");
         Parent noteRoot = FXMLLoader.load(getClass().getResource("/fxml/notesScene.fxml"));  //root of class path -- everytime load fxml
-        
+
         Scene noteScene = new Scene(noteRoot);
-        Stage noteStage =  new Stage();
+        Stage noteStage = new Stage();
         noteStage.setTitle("Note Scene -- Andrew Hallett IST 261 Project");
         noteStage.resizableProperty().setValue(Boolean.FALSE);
         noteStage.setScene(noteScene);
@@ -89,7 +85,7 @@ public class HomeScreenController {
         System.out.println("----------SCHEDULE (MAINSCREEN) BUTTON PRESSED----------");
         //Loading the new screen once the login button is pressed
         Parent scheduleRoot = FXMLLoader.load(getClass().getResource("/fxml/ScheduleScene.fxml"));
-        
+
         Scene scheduleScene = new Scene(scheduleRoot);
         //Getting stage information 
         Stage scheduleStage = new Stage();
@@ -108,7 +104,7 @@ public class HomeScreenController {
         //Getting scene
         Parent weekRoot = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));  //root of class path -- everytime load fxml
         Scene weekScene = new Scene(weekRoot);
-        Stage weekStage =  new Stage();
+        Stage weekStage = new Stage();
         //Title of scene
         weekStage.setTitle("Week Scene -- Andrew Hallett IST 261 Project");
         //Not allowing resizing of window

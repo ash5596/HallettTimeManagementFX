@@ -21,8 +21,6 @@ import javafx.stage.Stage;
  *
  * @author Andrew
  */
-
-
 public class NotesSceneController {
 
     @FXML
@@ -53,7 +51,7 @@ public class NotesSceneController {
     void handleNotesHomeButtonAction(ActionEvent event) throws IOException {
         //Testing
         System.out.println("---------RETURN (NOTESCENE) BUTTON PRESSED----------");
-        Stage noteStage  =(Stage) notesHomeButton.getScene().getWindow();
+        Stage noteStage = (Stage) notesHomeButton.getScene().getWindow();
         //Disabling resizing
         noteStage.resizableProperty().setValue(Boolean.FALSE);
         //Setting scene to display in center of screen
@@ -61,6 +59,4 @@ public class NotesSceneController {
         noteStage.close();
     }
 
-    }
-
-
+}
