@@ -6,7 +6,6 @@
 package edu.psu.bw.hallettist261project;
 
 import java.io.IOException;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -51,16 +50,16 @@ public class HomeScreenController {
 
     @FXML
     //Method that will display the month scene when the month button is clicked 
-    void handleMonthButtonAction(ActionEvent event) throws IOException {
-        System.out.println("---------MONTH BUTTON PRESSED----------");
-        Parent monthRoot = FXMLLoader.load(getClass().getResource("/fxml/MonthScene.fxml"));  //root of class path -- everytime load fxml
+    void handlePrototypeSchedulerButtonAction(ActionEvent event) throws IOException {
+        System.out.println("---------NEW SCHEDULER BUTTON PRESSED----------");
+        Parent prototypeRoot = FXMLLoader.load(getClass().getResource("/fxml/PrototypeScheduler.fxml"));  //root of class path -- everytime load fxml
 
-        Scene monthScene = new Scene(monthRoot);
-        Stage monthStage = new Stage();
-        monthStage.setTitle("Month Scene -- Andrew Hallett IST 261 Project");
-        monthStage.resizableProperty().setValue(Boolean.FALSE);
-        monthStage.setScene(monthScene);
-        monthStage.show();
+        Scene prototypeScene = new Scene(prototypeRoot);
+        Stage prototypeStage = new Stage();
+        prototypeStage.setTitle("New Scheduler Scene -- Andrew Hallett IST 261 Project");
+        prototypeStage.resizableProperty().setValue(Boolean.FALSE);
+        prototypeStage.setScene(prototypeScene);
+        prototypeStage.show();
 
     }
 
@@ -89,7 +88,7 @@ public class HomeScreenController {
         Scene scheduleScene = new Scene(scheduleRoot);
         //Getting stage information 
         Stage scheduleStage = new Stage();
-        scheduleStage.setTitle("Schedule Scene -- Andrew Hallett IST 261 Project");
+        scheduleStage.setTitle("Schedule Scene (in theory) -- Andrew Hallett IST 261 Project");
         scheduleStage.resizableProperty().setValue(Boolean.FALSE);
         scheduleStage.setScene(scheduleScene);
         scheduleStage.show();

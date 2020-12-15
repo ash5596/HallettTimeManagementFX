@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="readMeAnchor" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.ReadMeController">
+   <children>
+      <Pane prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #002d62; -fx-border-color: #a9a9a9; -fx-border-width: 10;">
+         <children>
+            <Label layoutX="102.0" text="Read me" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="43.0" prefHeight="207.0" prefWidth="370.0" text="This is the scheduler scene that I would have like to implemented. Although passing data between scenes from two different text fields while taking user input was difficult. I made a seconday scheduler that shows how this would have worked, by populating the week scene. " textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

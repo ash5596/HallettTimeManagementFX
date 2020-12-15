@@ -5,7 +5,6 @@
  */
 package edu.psu.bw.hallettist261project;
 
-import java.lang.System.Logger;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXML;
