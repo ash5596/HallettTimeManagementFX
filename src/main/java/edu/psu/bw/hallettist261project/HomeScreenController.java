@@ -44,15 +44,15 @@ public class HomeScreenController {
     //Method that will close the application when the logout button is clicked
     void handleLogoutButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------LOGOUT BUTTON PRESSED----------GOODBYE----------");
-        Stage stage = (Stage) logoutButton.getScene().getWindow();
-        stage.close();       
+        Stage logoutStage = (Stage) logoutButton.getScene().getWindow();
+        logoutStage.close();
     }
 
     @FXML
     //Method that will display the month scene when the month button is clicked 
     void handlePrototypeSchedulerButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------NEW SCHEDULER BUTTON PRESSED----------");
-        Parent prototypeRoot = FXMLLoader.load(getClass().getResource("/fxml/PrototypeScheduler.fxml"));  //root of class path -- everytime load fxml
+        Parent prototypeRoot = FXMLLoader.load(getClass().getResource("/fxml/PrototypeSchedulerNew.fxml"));  //root of class path -- everytime load fxml
 
         Scene prototypeScene = new Scene(prototypeRoot);
         Stage prototypeStage = new Stage();
