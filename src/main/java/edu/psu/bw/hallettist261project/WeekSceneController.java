@@ -28,7 +28,7 @@ public class WeekSceneController {
     private AnchorPane weekAnchorPane;
     @FXML
     private Button weekReturnButton;
-    
+
     @FXML
     private Label mondayLabelOne;
 
@@ -37,10 +37,10 @@ public class WeekSceneController {
 
     @FXML
     private Label mondayLabelThree;
-    
+
     @FXML
     TextField createEventTextField;
-    
+
     @FXML
     TextField nameOfEvent;
 

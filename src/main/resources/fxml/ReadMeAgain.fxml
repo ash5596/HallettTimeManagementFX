@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <Pane prefHeight="250.0" prefWidth="450.0" style="-fx-background-color: #002d62; -fx-border-width: 10; -fx-border-color: #a9a9a9;">
+         <children>
+            <Label layoutX="176.0" layoutY="14.0" text="Read Me" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="61.0" prefHeight="175.0" prefWidth="404.0" text="In a perfect world the user would be able to add the details of their event to each column in the table. For demonstration puporses I added events and scheduled them manually to show how it would work. This is what I was trying to do in events and events controller classes." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -19,7 +19,7 @@ public class TimeManagement extends Application {
 
     @FXML
     Button loginButton;
-    
+
     @Override
     //Method to display the first screen the user will see when loging in
     public void start(Stage loginStage) throws Exception {
@@ -37,10 +37,11 @@ public class TimeManagement extends Application {
         loginStage.show();
 
     }
+
     //Main method 
     public static void main(String[] args) {
         //Logger info
-        PropertyConfigurator.configure("log4j.properties");         
+        PropertyConfigurator.configure("log4j.properties");
         launch();
     }
 

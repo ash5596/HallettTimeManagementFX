@@ -51,7 +51,7 @@ public class ScheduleController {
 
     @FXML
     private Button sundayScheduleButton;
-    
+
     @FXML
     private Button readMeButton;
 
@@ -68,7 +68,7 @@ public class ScheduleController {
         //closing scene
         scheduleStage.close();
     }
-    
+
     @FXML
     //Method to display the readMe scene 
     void handleReadMeButtonOnAction(ActionEvent event) throws IOException {
@@ -120,6 +120,5 @@ public class ScheduleController {
     void handleSundayButtonOnAction(ActionEvent event) {
 
     }
-    
 
 }

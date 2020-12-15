@@ -26,7 +26,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.Stage;
 
-public class FinalNewSchedulerController{
+public class FinalNewSchedulerController {
 
 //    //Setting up table variables
 //    @FXML
@@ -51,6 +51,10 @@ public class FinalNewSchedulerController{
 //    private TextField eventTypeTextField;
 //    @FXML
 //    private Button scheduleButton;
+    @FXML
+    private Button readMeAgainButton;
+    @FXML
+    private Button homeButton;
 //
 //    //Method will let user click on the cell in the table to edit information 
 //    @FXML
@@ -79,16 +83,45 @@ public class FinalNewSchedulerController{
 //        Events selectedEvent = tableView.getSelectionModel().getSelectedItem();
 //        selectedEvent.setEventDay(edittedCell.getNewValue().toString());
 //    }
-    
-
 
     @FXML
+    //Method that will take the user to the week view to see where the evnets they have made got populated to 
     void handleScheduleButtonOnAction(ActionEvent event) throws IOException {
         Parent newScheduleViewParent = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));
         Scene newScheduleScene = new Scene(newScheduleViewParent);
-        Stage newScheduleWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage newScheduleWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
         newScheduleWindow.setScene(newScheduleScene);
         newScheduleWindow.show();
+
+    }
+
+    @FXML
+    //Method to handle the read me button 
+    void handleReadMeAgainButtonOnAction(ActionEvent event) throws IOException {
+        System.out.println("----------READ ME AGAIN BUTTON PRESSED----------");
+        //Loading the new screen once the login button is pressed
+        Parent readMeAgainRoot = FXMLLoader.load(getClass().getResource("/fxml/ReadMeAgain.fxml"));
+
+        Scene readMeAgainScene = new Scene(readMeAgainRoot);
+        //Getting stage information 
+        Stage readMeAgainStage = new Stage();
+        readMeAgainStage.setTitle("Schedule Scene (somewhat working) -- Andrew Hallett IST 261 Project");
+        readMeAgainStage.resizableProperty().setValue(Boolean.FALSE);
+        readMeAgainStage.setScene(readMeAgainScene);
+        readMeAgainStage.show();
+
+    }
+
+    @FXML
+    void handleHomeButtonOnAction(ActionEvent event) {
+        //Testing
+        System.out.println("---------RETURN (NOTESCENE) BUTTON PRESSED----------");
+        Stage noteStage = (Stage) homeButton.getScene().getWindow();
+        //Disabling resizing
+        noteStage.resizableProperty().setValue(Boolean.FALSE);
+        //Setting scene to display in center of screen
+        noteStage.centerOnScreen();
+        noteStage.close();
 
     }
 
@@ -135,9 +168,4 @@ public class FinalNewSchedulerController{
 //
 //    }
 //    
-    
-    
-        
-    
-
 }

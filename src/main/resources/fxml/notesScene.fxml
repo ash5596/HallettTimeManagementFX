@@ -27,11 +27,6 @@
             <TextField fx:id="notesTextFour" layoutX="455.0" layoutY="230.0" prefHeight="80.0" prefWidth="284.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
             <TextField fx:id="notesTextFive" layoutX="44.0" layoutY="360.0" prefHeight="80.0" prefWidth="284.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
             <TextField fx:id="notesTextSix" layoutX="458.0" layoutY="360.0" prefHeight="80.0" prefWidth="290.0" style="-fx-border-color: #A9A9A9; -fx-border-width: 10; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
-            <Button fx:id="saveButton" layoutX="692.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleNotesSaveButtonAction" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Save">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
          </children>
       </Pane>
    </children>

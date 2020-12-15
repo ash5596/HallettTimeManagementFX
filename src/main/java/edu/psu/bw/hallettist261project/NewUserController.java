@@ -36,19 +36,19 @@ public class NewUserController {
 
     @FXML
     private Button returnFromNewUser;
-    
+
     @FXML
     Stage newUserStage;
-    
+
     @FXML
     Scene newUserScene;
-    
+
     @FXML
     Parent homeScreenParent;
-    
+
     @FXML
     Scene homeScreenScene;
-    
+
     @FXML
     Stage homeScreenStage;
 
@@ -75,5 +75,5 @@ public class NewUserController {
         //Setting scene to display in center of screen
         newUserStage.centerOnScreen();
         newUserStage.show();
-    }             
+    }
 }
