@@ -52,14 +52,14 @@ public class HomeScreenController {
     //Method that will display the month scene when the month button is clicked 
     void handlePrototypeSchedulerButtonAction(ActionEvent event) throws IOException {
         System.out.println("---------NEW SCHEDULER BUTTON PRESSED----------");
-        Parent prototypeRoot = FXMLLoader.load(getClass().getResource("/fxml/PrototypeSchedulerNew.fxml"));  //root of class path -- everytime load fxml
+        Parent newSchedulerRoot = FXMLLoader.load(getClass().getResource("/fxml/FinalNewScheduler.fxml"));  //root of class path -- everytime load fxml
 
-        Scene prototypeScene = new Scene(prototypeRoot);
-        Stage prototypeStage = new Stage();
-        prototypeStage.setTitle("New Scheduler Scene -- Andrew Hallett IST 261 Project");
-        prototypeStage.resizableProperty().setValue(Boolean.FALSE);
-        prototypeStage.setScene(prototypeScene);
-        prototypeStage.show();
+        Scene newSchedulerScene = new Scene(newSchedulerRoot);
+        Stage newSchedulerStage = new Stage();
+        newSchedulerStage.setTitle("New Scheduler Scene -- Andrew Hallett IST 261 Project");
+        newSchedulerStage.resizableProperty().setValue(Boolean.FALSE);
+        newSchedulerStage.setScene(newSchedulerScene);
+        newSchedulerStage.show();
 
     }
 
