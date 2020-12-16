@@ -125,5 +125,10 @@ public class FinalNewSchedulerController implements Initializable{
         noteStage.close();
 
     }
+    
+    @FXML
+    void handleAddButtonOnAction(ActionEvent event) {
+
+    }
 
 }

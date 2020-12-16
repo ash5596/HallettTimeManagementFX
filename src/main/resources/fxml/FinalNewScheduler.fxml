@@ -47,11 +47,11 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <TextField fx:id="addEventName" layoutX="22.0" layoutY="371.0" />
-            <TextField fx:id="addEventDay" layoutX="195.0" layoutY="371.0" />
-            <TextField fx:id="addEventTime" layoutX="366.0" layoutY="371.0" />
-            <TextField fx:id="addEventType" layoutX="539.0" layoutY="371.0" />
-            <Button fx:id="addButton" layoutX="723.0" layoutY="371.0" mnemonicParsing="false" text="Add" />
+            <TextField fx:id="addEventName" layoutX="22.0" layoutY="371.0" promptText="add event name" />
+            <TextField fx:id="addEventDay" layoutX="195.0" layoutY="371.0" promptText="add event day" />
+            <TextField fx:id="addEventTime" layoutX="366.0" layoutY="371.0" promptText="add event time" />
+            <TextField fx:id="addEventType" layoutX="539.0" layoutY="371.0" promptText="add event type" />
+            <Button fx:id="addButton" layoutX="709.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleAddButtonOnAction" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #002d62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5;" text="Add" textFill="WHITE" />
          </children>
       </Pane>
    </children>
