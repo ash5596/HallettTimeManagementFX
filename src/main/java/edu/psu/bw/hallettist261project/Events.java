@@ -25,6 +25,7 @@ public class Events {
 
     }
 
+    //Gets and Sets methods
     public String getEventName() {
         return eventName.get();
     }

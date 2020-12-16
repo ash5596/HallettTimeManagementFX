@@ -45,6 +45,7 @@ public class WeekSceneController {
     TextField nameOfEvent;
 
     @FXML
+    //Method to open the week scene when week button is pressed
     void handleNoteButtonAction(ActionEvent event) throws IOException {
         //Testing
         System.out.println("---------NOTE BUTTON PRESSED----------");

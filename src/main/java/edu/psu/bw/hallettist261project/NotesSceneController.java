@@ -45,6 +45,7 @@ public class NotesSceneController {
     private TextField notesTextSix;
 
     @FXML
+    //Method to take the user back to home screen when home button pressed on note scene
     void handleNotesHomeButtonAction(ActionEvent event) throws IOException {
         //Testing
         System.out.println("---------RETURN (NOTESCENE) BUTTON PRESSED----------");

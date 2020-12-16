@@ -65,6 +65,7 @@ public class LoginController implements Initializable {
     Button returnFromNewUser;
 
     @FXML
+    //Method to handle the login button
     public void handleLoginButtonOnAction(ActionEvent event) throws IOException {
         //Checking if the username and password are correct       
         if (userBox.getText().equals("Andrew") && passBox.getText().equals("pass")) {

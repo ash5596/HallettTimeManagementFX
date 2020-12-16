@@ -24,6 +24,7 @@ public class PopulatedWeekController {
     private Button weekReturnButton;
 
     @FXML
+    //Method to display week scene with events populated
     void handleWeekReturnHomeButton(ActionEvent event) {
         //Testing
         System.out.println("---------RETURN (POPULATED WEEK SCENE) BUTTON PRESSED----------");

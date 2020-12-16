@@ -115,7 +115,7 @@ public class FinalNewSchedulerController implements Initializable {
         Stage newScheduleWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
         newScheduleWindow.setScene(newScheduleScene);
         newScheduleWindow.show();
-
+        //Listners add to table view if Monday
         eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (addEventDayText.getText() == "Monday") {
                 if (newVal != null) {
@@ -127,7 +127,7 @@ public class FinalNewSchedulerController implements Initializable {
                 }
             }
         });
-
+        //Listners add to table view if Tuesday
         eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (addEventDayText.getText() == "Tuesday") {
                 if (newVal != null) {
@@ -139,7 +139,7 @@ public class FinalNewSchedulerController implements Initializable {
                 }
             }
         });
-
+        //Listners add to table view if Wednesday
         eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (addEventDayText.getText() == "Wednesday") {
                 if (newVal != null) {
@@ -151,7 +151,7 @@ public class FinalNewSchedulerController implements Initializable {
                 }
             }
         });
-
+        //Listners add to table view if Thursday
         eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (addEventDayText.getText() == "Thursday") {
                 if (newVal != null) {
@@ -163,7 +163,7 @@ public class FinalNewSchedulerController implements Initializable {
                 }
             }
         });
-
+        //Listners add to table view if Friday
         eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (addEventDayText.getText() == "Friday") {
                 if (newVal != null) {
@@ -175,7 +175,7 @@ public class FinalNewSchedulerController implements Initializable {
                 }
             }
         });
-
+        //Listners add to table view if Saturday
         eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (addEventDayText.getText() == "Saturday") {
                 if (newVal != null) {
@@ -187,7 +187,7 @@ public class FinalNewSchedulerController implements Initializable {
                 }
             }
         });
-
+        //Listners add to table view if Sunday
         eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (addEventDayText.getText() == "Sunday") {
                 if (newVal != null) {
