@@ -62,11 +62,12 @@ public class FinalNewSchedulerController implements Initializable {
     private Button deleteButton;
 
     //Initializing the scene
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
-        eventNameColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventName"));
-        eventDayColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventDay"));
-        eventTimeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventTime"));
-        eventTypeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventType"));
+        eventNameColumn.setCellValueFactory(new PropertyValueFactory<>("EventName"));
+        eventDayColumn.setCellValueFactory(new PropertyValueFactory<>("EventDay"));
+        eventTimeColumn.setCellValueFactory(new PropertyValueFactory<>("EventTime"));
+        eventTypeColumn.setCellValueFactory(new PropertyValueFactory<>("EventType"));
 
         //Loading test data
         eventTable.setItems(getEvents());
@@ -78,8 +79,8 @@ public class FinalNewSchedulerController implements Initializable {
 
         ObservableList<Events> eventsList = FXCollections.observableArrayList();
         eventsList.add(new Events("Dr. Apointment", "Monday", "11 AM", "Apointment"));
-        eventsList.add(new Events("Car Service", "Wednesday", "3 PM", "Car Service"));
-        eventsList.add(new Events("Mail Package", "Saturday", "Anytime", "Self Errand"));
+        eventsList.add(new Events("Oil Change", "Wednesday", "3 PM", "Car Service"));
+        eventsList.add(new Events("Mail Package", "Saturday", "1 PM", "Self Errand"));
 
         return eventsList;
     }
@@ -136,6 +137,13 @@ public class FinalNewSchedulerController implements Initializable {
 
         //Get the data from the 
         eventTable.getItems().add(newEvents);
+        
+        //Clearing the text from the textfields that was already entered into the table
+        //Allows clean text field for user to type next event into 
+        addEventNameText.clear();
+        addEventDayText.clear();
+        addEventTimeText.clear();
+        addEventTypeText.clear();
 
     }
 
