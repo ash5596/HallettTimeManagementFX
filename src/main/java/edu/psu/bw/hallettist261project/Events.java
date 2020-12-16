@@ -9,13 +9,15 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Events {
 
-    //
+    //SimpleStringProperty is like string but has listeners built into ti
     private SimpleStringProperty eventName;
     private SimpleStringProperty eventDay;
     private SimpleStringProperty eventTime;
     private SimpleStringProperty eventType;
 
+    //Constructor
     public Events(String eventName, String eventDay, String eventTime, String eventType) {
+        //Converting strings into simplestrings 
         this.eventName = new SimpleStringProperty(eventName);
         this.eventDay = new SimpleStringProperty(eventDay);
         this.eventTime = new SimpleStringProperty(eventTime);

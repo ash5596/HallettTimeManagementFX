@@ -8,6 +8,8 @@ package edu.psu.bw.hallettist261project;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,31 +28,20 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.Stage;
 
-public class FinalNewSchedulerController {
+public class FinalNewSchedulerController implements Initializable{
 
-//    //Setting up table variables
-//    @FXML
-//    private TableView<Events> tableView;
-//    @FXML
-//    private TableColumn<Events, String> eventNameColumn;
-//    @FXML
-//    private TableColumn<Events, String> eventDayColumn;
-//    @FXML
-//    private TableColumn<Events, String> eventTimeColumn;
-//    @FXML
-//    private TableColumn<Events, String> eventTypeColumn;
-//
-//    //Instance variables to create event objects
-//    @FXML
-//    private TextField eventNameTextField;
-//    @FXML
-//    private TextField eventDayTextField;
-//    @FXML
-//    private TextField eventTimeTextField;
-//    @FXML
-//    private TextField eventTypeTextField;
-//    @FXML
-//    private Button scheduleButton;
+    //Setting up table variables
+    @FXML
+    private TableView<Events> eventTable;
+    @FXML
+    private TableColumn<Events, String> eventNameColumn;
+    @FXML
+    private TableColumn<Events, String> eventDayColumn;
+    @FXML
+    private TableColumn<Events, String> eventTimeColumn;
+    @FXML
+    private TableColumn<Events, String> eventTypeColumn;
+
     @FXML
     private Button readMeAgainButton;
     @FXML
@@ -70,34 +61,28 @@ public class FinalNewSchedulerController {
     @FXML
     private Button addButton;
 
-//
-//    //Method will let user click on the cell in the table to edit information 
-//    @FXML
-//    public void editEventNameCell(CellEditEvent edittedCell) {
-//        Events selectedEvent = tableView.getSelectionModel().getSelectedItem();
-//        selectedEvent.setEventDay(edittedCell.getNewValue().toString());
-//    }
-//
-//    //Method will let user click on the cell in the table to edit information 
-//    @FXML
-//    public void editEventDayCell(CellEditEvent edittedCell) {
-//        Events selectedEvent = tableView.getSelectionModel().getSelectedItem();
-//        selectedEvent.setEventDay(edittedCell.getNewValue().toString());
-//    }
-//
-//    //Method will let user click on the cell in the table to edit information 
-//    @FXML
-//    public void editEventTimeCell(CellEditEvent edittedCell) {
-//        Events selectedEvent = tableView.getSelectionModel().getSelectedItem();
-//        selectedEvent.setEventDay(edittedCell.getNewValue().toString());
-//    }
-//
-//    //Method will let user click on the cell in the table to edit information 
-//    @FXML
-//    public void editEventTypeCell(CellEditEvent edittedCell) {
-//        Events selectedEvent = tableView.getSelectionModel().getSelectedItem();
-//        selectedEvent.setEventDay(edittedCell.getNewValue().toString());
-//    }
+    //Initializing the scene
+    public void initialize(URL url, ResourceBundle rb) {
+        eventNameColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventName"));
+        eventDayColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventDay"));
+        eventTimeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventTime"));
+        eventTypeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventColumn"));
+
+        //Loading test data
+        eventTable.setItems(getEvents());
+
+    }
+
+    //Creating an Observalbe list and adding data for the inside of the table
+    public ObservableList<Events> getEvents() {
+
+        ObservableList<Events> eventsList = FXCollections.observableArrayList();
+        eventsList.add(new Events("Dr. Apointment", "Monday", "11 AM", "Apointment"));
+        eventsList.add(new Events("Car Service", "Wednesday", "3 PM", "Car Service"));
+        eventsList.add(new Events("Mail Package", "Saturday", "Anytime", "Self Errand"));
+
+        return eventsList;
+    }
 
     @FXML
     //Method that will take the user to the week view to see where the evnets they have made got populated to 
@@ -140,48 +125,5 @@ public class FinalNewSchedulerController {
         noteStage.close();
 
     }
-    
-//    @Override
-//    //Initializing the controller class
-//    public void initialize(URL url, ResourceBundle rb) {
-//        eventNameColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("Event Name"));
-//        eventDayColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("Event Day"));
-//        eventTimeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("Event Time"));
-//        eventTypeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("Event Column"));
-//        
-//        //Loading test data
-//        //tableView.setItems(getEvents());
-//        
-//        //Being able to update the table
-//        tableView.setEditable(true);
-//        eventNameColumn.setCellFactory(TextFieldTableCell.forTableColumn());
-//        eventDayColumn.setCellFactory(TextFieldTableCell.forTableColumn());
-//        eventTimeColumn.setCellFactory(TextFieldTableCell.forTableColumn());
-//        eventTypeColumn.setCellFactory(TextFieldTableCell.forTableColumn());
-//        
-//        //Being able to chose more than one row at a time
-//        tableView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-//        
-//        //Get rid of being able to go to week view until there is a row that is selected
-//        this.scheduleButton.setDisable(true);
-//    }
-//    
-//    
-//
-//    @FXML
-//    //Method will delete the rows that are selected by the user -- remove from table
-//    void handleDeleteButtonOnAction(ActionEvent event) {
-//        ObservableList<Events> selectedRows, allEvents;
-//        allEvents = tableView.getItems();
-//        
-//        //Handling the rows that were selcted by the user
-//        selectedRows = tableView.getSelectionModel().getSelectedItems();
-//        
-//        //For loop that will select rows and take away the event objects out of the table
-//        for (Events events: selectedRows) {
-//            allEvents.remove(events);
-//        }
-//
-//    }
-//    
+
 }
