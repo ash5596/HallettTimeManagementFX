@@ -63,7 +63,7 @@ public class LoginController implements Initializable {
 
     @FXML
     Button returnFromNewUser;
-    
+
     @FXML
     public void handleLoginButtonOnAction(ActionEvent event) throws IOException {
         //Checking if the username and password are correct
@@ -110,7 +110,7 @@ public class LoginController implements Initializable {
         //Disabling resizable
         newUserStage.resizableProperty().setValue(Boolean.FALSE);
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //this.loginImage = new ImageView("Images/calendar-image-png-3.jpg");

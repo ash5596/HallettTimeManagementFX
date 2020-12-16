@@ -59,21 +59,7 @@ public class NewUserController {
 
     @FXML
     void handleReturnNewUserOnAction(ActionEvent event) throws IOException {
-        //Testing
-        System.out.println("---------RETURN (CREATE NEW USER) BUTTON PRESSED----------");
-        Parent newUserRoot = FXMLLoader.load(getClass().getResource("/fxml/LoginScene.fxml"));  //root of class path -- everytime load fxml
-        //Creating scene
-        Scene loginScene = new Scene(newUserRoot);
-        //Creating stage
-        Stage newUserStage = new Stage();
-        //Setting title
-        newUserStage.setTitle("Login Scene -- Andrew Hallett IST 261 Project");
-        //Not allowing resizable
-        newUserStage.resizableProperty().setValue(Boolean.FALSE);
-        //Displaing scene
-        newUserStage.setScene(loginScene);
-        //Setting scene to display in center of screen
-        newUserStage.centerOnScreen();
-        newUserStage.show();
+        
+        
     }
 }

@@ -55,6 +55,21 @@ public class FinalNewSchedulerController {
     private Button readMeAgainButton;
     @FXML
     private Button homeButton;
+    @FXML
+    private TextField addEventNameField;
+
+    @FXML
+    private TextField addEventDayField;
+
+    @FXML
+    private TextField addEventTimeField;
+
+    @FXML
+    private TextField addEventTypeField;
+
+    @FXML
+    private Button addButton;
+
 //
 //    //Method will let user click on the cell in the table to edit information 
 //    @FXML
@@ -87,7 +102,7 @@ public class FinalNewSchedulerController {
     @FXML
     //Method that will take the user to the week view to see where the evnets they have made got populated to 
     void handleScheduleButtonOnAction(ActionEvent event) throws IOException {
-        Parent newScheduleViewParent = FXMLLoader.load(getClass().getResource("/fxml/weekScene.fxml"));
+        Parent newScheduleViewParent = FXMLLoader.load(getClass().getResource("/fxml/PopulatedWeekScene.fxml"));
         Scene newScheduleScene = new Scene(newScheduleViewParent);
         Stage newScheduleWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
         newScheduleWindow.setScene(newScheduleScene);
@@ -113,6 +128,7 @@ public class FinalNewSchedulerController {
     }
 
     @FXML
+    //Method to handle the homeButton when clicked
     void handleHomeButtonOnAction(ActionEvent event) {
         //Testing
         System.out.println("---------RETURN (NOTESCENE) BUTTON PRESSED----------");
@@ -124,7 +140,7 @@ public class FinalNewSchedulerController {
         noteStage.close();
 
     }
-
+    
 //    @Override
 //    //Initializing the controller class
 //    public void initialize(URL url, ResourceBundle rb) {
