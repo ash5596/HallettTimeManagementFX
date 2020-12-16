@@ -28,7 +28,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.Stage;
 
-public class FinalNewSchedulerController implements Initializable{
+public class FinalNewSchedulerController implements Initializable {
 
     //Setting up table variables
     @FXML
@@ -47,26 +47,26 @@ public class FinalNewSchedulerController implements Initializable{
     @FXML
     private Button homeButton;
     @FXML
-    private TextField addEventNameField;
+    private TextField addEventNameText;
 
     @FXML
-    private TextField addEventDayField;
+    private TextField addEventDayText;
 
     @FXML
-    private TextField addEventTimeField;
+    private TextField addEventTimeText;
 
     @FXML
-    private TextField addEventTypeField;
+    private TextField addEventTypeText;
 
     @FXML
-    private Button addButton;
+    private Button deleteButton;
 
     //Initializing the scene
     public void initialize(URL url, ResourceBundle rb) {
         eventNameColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventName"));
         eventDayColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventDay"));
         eventTimeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventTime"));
-        eventTypeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventColumn"));
+        eventTypeColumn.setCellValueFactory(new PropertyValueFactory<Events, String>("EventType"));
 
         //Loading test data
         eventTable.setItems(getEvents());
@@ -125,9 +125,31 @@ public class FinalNewSchedulerController implements Initializable{
         noteStage.close();
 
     }
-    
+
     @FXML
-    void handleAddButtonOnAction(ActionEvent event) {
+    //Method will allow the user to populate the text fields and add an event with the add button 
+    public void handleAddButtonOnAction(ActionEvent event) {
+        Events newEvents = new Events(addEventNameText.getText(),
+                addEventDayText.getText(),
+                addEventTimeText.getText(),
+                addEventTypeText.getText());
+
+        //Get the data from the 
+        eventTable.getItems().add(newEvents);
+
+    }
+
+    @FXML
+    //Method will delete the selected row from the table -- based on the user selection
+    void handleDeleteButtonOnAction(ActionEvent event) {
+        ObservableList<Events> selectedRows, allEvents;
+        allEvents = eventTable.getItems();
+        //Will specify the rows that are selected by the user 
+        selectedRows = eventTable.getSelectionModel().getSelectedItems();
+        //Loop that will go through the rows and take away the event objects from the table
+        for(Events events: selectedRows) {
+            allEvents.remove(events);
+        }
 
     }
 
