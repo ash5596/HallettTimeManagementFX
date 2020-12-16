@@ -7,20 +7,20 @@
 
 
 <AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
-   <children>
-      <Pane prefHeight="250.0" prefWidth="450.0" style="-fx-background-color: #002d62; -fx-border-width: 10; -fx-border-color: #a9a9a9;">
-         <children>
-            <Label layoutX="176.0" layoutY="14.0" text="Read Me" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="28.0" layoutY="48.0" prefHeight="188.0" prefWidth="404.0" text="I was unable to correctly populate the week view scene. Which in theory would populate labels based on the attributes that are specified when the user creates an event in the schduler. To demonstrate this, I pre populated the week scene with the events created." textFill="WHITE" wrapText="true">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-   </children>
+    <children>
+        <Pane prefHeight="250.0" prefWidth="450.0" style="-fx-background-color: #002d62; -fx-border-width: 10; -fx-border-color: #a9a9a9;">
+            <children>
+                <Label layoutX="176.0" layoutY="14.0" text="Read Me" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="28.0" layoutY="48.0" prefHeight="188.0" prefWidth="404.0" text="I was unable to correctly populate the week view scene. Which in theory would populate labels based on the attributes that are specified when the user creates an event in the schduler. To demonstrate this, I pre populated the week scene with the events created." textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
 </AnchorPane>

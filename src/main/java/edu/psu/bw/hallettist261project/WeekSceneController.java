@@ -96,7 +96,5 @@ public class WeekSceneController {
     public void setMondayLabelThree(Label mondayLabelThree) {
         this.mondayLabelThree = mondayLabelThree;
     }
-    
-    
-    
+
 }

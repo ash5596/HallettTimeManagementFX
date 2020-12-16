@@ -5,13 +5,10 @@
  */
 package edu.psu.bw.hallettist261project;
 
-
-
 /**
  *
  * @author Andrew
  */
 public class ReadMeAgainController {
 
-    
 }

@@ -11,49 +11,50 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.FinalNewSchedulerController">
-   <children>
-      <Pane prefHeight="520.0" prefWidth="800.0" style="-fx-background-color: #002d62; -fx-border-color: #a9a9a9; -fx-border-width: 10;">
-         <children>
-            <TableView fx:id="eventTable" layoutX="22.0" layoutY="90.0" prefHeight="274.0" prefWidth="756.0">
-              <columns>
-                <TableColumn fx:id="eventNameColumn" prefWidth="158.0" text="Event Name" />
-                <TableColumn fx:id="eventDayColumn" prefWidth="176.0" text="Event Day" />
-                  <TableColumn fx:id="eventTimeColumn" prefWidth="210.0" text="Event Time" />
-                  <TableColumn fx:id="eventTypeColumn" prefWidth="211.0" text="Event Type" />
-              </columns>
-            </TableView>
-            <Label layoutX="269.0" layoutY="14.0" prefHeight="53.0" prefWidth="263.0" text="Scheduler" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="48.0" />
-               </font>
-            </Label>
-            <Button fx:id="scheduleButton" layoutX="626.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleScheduleButtonOnAction" prefHeight="51.0" prefWidth="123.0" style="-fx-border-color: #ffffff; -fx-background-color: #002d62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-width: 5;" text="Schedule" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font></Button>
-            <Button fx:id="readMeAgainButton" layoutX="34.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleReadMeAgainButtonOnAction" prefHeight="51.0" prefWidth="123.0" style="-fx-background-color: #002d62; -fx-border-color: #ffffff; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-width: 5;" text="Read Me" textFill="WHITE">
-               <effect>
-                  <DropShadow />
-               </effect>
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="homeButton" layoutX="339.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleHomeButtonOnAction" prefHeight="51.0" prefWidth="123.0" style="-fx-background-color: #002d62; -fx-border-color: #ffffff; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-width: 5;" text="Home" textFill="WHITE">
-               <effect>
-                  <DropShadow />
-               </effect>
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
-            <TextField fx:id="addEventNameText" layoutX="21.0" layoutY="371.0" prefHeight="25.0" prefWidth="144.0" promptText="add event name" style="-fx-background-radius: 5em;" />
-            <TextField fx:id="addEventDayText" layoutX="172.0" layoutY="371.0" prefHeight="25.0" prefWidth="153.0" promptText="add event day" style="-fx-background-radius: 5em;" />
-            <TextField fx:id="addEventTimeText" layoutX="330.0" layoutY="371.0" prefHeight="25.0" prefWidth="153.0" promptText="add event time" style="-fx-background-radius: 5em;" />
-            <TextField fx:id="addEventTypeText" layoutX="490.0" layoutY="371.0" prefHeight="25.0" prefWidth="153.0" promptText="add event type" style="-fx-background-radius: 5em;" />
-            <Button fx:id="addButton" layoutX="650.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleAddButtonOnAction" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #002d62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5;" text="Add" textFill="WHITE" />
-            <Button fx:id="deleteButton" layoutX="718.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleDeleteButtonOnAction" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #002d62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5;" text="Delete" textFill="WHITE" />
-         </children>
-      </Pane>
-   </children>
+    <children>
+        <Pane prefHeight="520.0" prefWidth="800.0" style="-fx-background-color: #002d62; -fx-border-color: #a9a9a9; -fx-border-width: 10;">
+            <children>
+                <TableView fx:id="eventTable" layoutX="22.0" layoutY="90.0" prefHeight="274.0" prefWidth="756.0">
+                    <columns>
+                        <TableColumn fx:id="eventNameColumn" prefWidth="158.0" text="Event Name" />
+                        <TableColumn fx:id="eventDayColumn" prefWidth="176.0" text="Event Day" />
+                        <TableColumn fx:id="eventTimeColumn" prefWidth="210.0" text="Event Time" />
+                        <TableColumn fx:id="eventTypeColumn" prefWidth="211.0" text="Event Type" />
+                    </columns>
+                </TableView>
+                <Label layoutX="269.0" layoutY="14.0" prefHeight="53.0" prefWidth="263.0" text="Scheduler" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Button fx:id="scheduleButton" layoutX="626.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleScheduleButtonOnAction" prefHeight="51.0" prefWidth="123.0" style="-fx-border-color: #ffffff; -fx-background-color: #002d62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-width: 5;" text="Schedule" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="readMeAgainButton" layoutX="34.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleReadMeAgainButtonOnAction" prefHeight="51.0" prefWidth="123.0" style="-fx-background-color: #002d62; -fx-border-color: #ffffff; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-width: 5;" text="Read Me" textFill="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="homeButton" layoutX="339.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleHomeButtonOnAction" prefHeight="51.0" prefWidth="123.0" style="-fx-background-color: #002d62; -fx-border-color: #ffffff; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-width: 5;" text="Home" textFill="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="addEventNameText" layoutX="21.0" layoutY="371.0" prefHeight="25.0" prefWidth="144.0" promptText="add event name" style="-fx-background-radius: 5em;" />
+                <TextField fx:id="addEventDayText" layoutX="172.0" layoutY="371.0" prefHeight="25.0" prefWidth="153.0" promptText="add event day" style="-fx-background-radius: 5em;" />
+                <TextField fx:id="addEventTimeText" layoutX="330.0" layoutY="371.0" prefHeight="25.0" prefWidth="153.0" promptText="add event time" style="-fx-background-radius: 5em;" />
+                <TextField fx:id="addEventTypeText" layoutX="490.0" layoutY="371.0" prefHeight="25.0" prefWidth="153.0" promptText="add event type" style="-fx-background-radius: 5em;" />
+                <Button fx:id="addButton" layoutX="650.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleAddButtonOnAction" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #002d62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5;" text="Add" textFill="WHITE" />
+                <Button fx:id="deleteButton" layoutX="718.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleDeleteButtonOnAction" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #002d62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5;" text="Delete" textFill="WHITE" />
+            </children>
+        </Pane>
+    </children>
 </AnchorPane>

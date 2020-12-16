@@ -10,62 +10,64 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="loginAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.LoginController">
-   <children>
-      <Pane prefHeight="400.0" prefWidth="227.0" style="-fx-background-color: #002D62;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Label alignment="CENTER" layoutX="6.0" layoutY="37.0" text="Time Management" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="82.0" layoutY="91.0" text="IST 261" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="44.0" layoutY="345.0" text="Created by: Andrew Hallett" textFill="WHITE" />
-            <Label layoutX="65.0" layoutY="362.0" text="Copyright © 2020" textFill="WHITE" />
-            <Button fx:id="createUserButton" layoutX="41.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleCreateUserButton" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Create User" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </Button>
-         </children>
-      </Pane>
-      <Pane layoutX="227.0" prefHeight="400.0" prefWidth="374.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #002D62; -fx-border-insets: 10; -fx-border-width: 5;">
-         <children>
-            <Label layoutX="111.0" layoutY="26.0" prefHeight="44.0" prefWidth="152.0" text="LOGIN">
-               <font>
-                  <Font size="48.0" />
-               </font>
-            </Label>
-            <Label layoutX="46.0" layoutY="139.0" text="Username" />
-            <Label layoutX="48.0" layoutY="226.0" text="Password" />
-            <TextField fx:id="userBox" layoutX="114.0" layoutY="135.0" prefHeight="25.0" prefWidth="190.0" />
-            <Button fx:id="loginButton" layoutX="213.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleLoginButtonOnAction" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Login" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <effect>
-                  <DropShadow />
-               </effect></Button>
-            <Label fx:id="invalidLogin" layoutX="68.0" layoutY="284.0" prefHeight="27.0" prefWidth="276.0" textAlignment="CENTER" textFill="RED">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font></Label>
-            <PasswordField fx:id="passBox" layoutX="114.0" layoutY="222.0" prefHeight="25.0" prefWidth="190.0" />
-            <Button fx:id="clearLoginButton" layoutX="67.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleClearLoginButton" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Clear" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </Button>
-         </children>
-      </Pane>
-   </children>
+    <children>
+        <Pane prefHeight="400.0" prefWidth="227.0" style="-fx-background-color: #002D62;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" layoutX="6.0" layoutY="37.0" text="Time Management" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="82.0" layoutY="91.0" text="IST 261" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="44.0" layoutY="345.0" text="Created by: Andrew Hallett" textFill="WHITE" />
+                <Label layoutX="65.0" layoutY="362.0" text="Copyright © 2020" textFill="WHITE" />
+                <Button fx:id="createUserButton" layoutX="41.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleCreateUserButton" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Create User" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            </children>
+        </Pane>
+        <Pane layoutX="227.0" prefHeight="400.0" prefWidth="374.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #002D62; -fx-border-insets: 10; -fx-border-width: 5;">
+            <children>
+                <Label layoutX="111.0" layoutY="26.0" prefHeight="44.0" prefWidth="152.0" text="LOGIN">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                </Label>
+                <Label layoutX="46.0" layoutY="139.0" text="Username" />
+                <Label layoutX="48.0" layoutY="226.0" text="Password" />
+                <TextField fx:id="userBox" layoutX="114.0" layoutY="135.0" prefHeight="25.0" prefWidth="190.0" />
+                <Button fx:id="loginButton" layoutX="213.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleLoginButtonOnAction" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Label fx:id="invalidLogin" layoutX="68.0" layoutY="284.0" prefHeight="27.0" prefWidth="276.0" textAlignment="CENTER" textFill="RED">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passBox" layoutX="114.0" layoutY="222.0" prefHeight="25.0" prefWidth="190.0" />
+                <Button fx:id="clearLoginButton" layoutX="67.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleClearLoginButton" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Clear" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            </children>
+        </Pane>
+    </children>
 </AnchorPane>

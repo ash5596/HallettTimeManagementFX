@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Name: Andrew Hallett
+ * Class: IST 261
+ * Project: HallettIst261Project
  */
 package edu.psu.bw.hallettist261project;
 
@@ -35,7 +35,4 @@ public class PopulatedWeekController {
         weekStagePopulated.close();
     }
 
-    
-
 }
-

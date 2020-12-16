@@ -11,179 +11,182 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="scheduleAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="800.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.bw.hallettist261project.ScheduleController">
-   <children>
-      <Pane layoutY="-3.0" prefHeight="523.0" prefWidth="212.0" style="-fx-background-color: #002D62;">
-         <children>
-            <Label layoutX="15.0" layoutY="88.0" prefHeight="35.0" prefWidth="175.0" text="1.) Create Name" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="22.0" />
-               </font>
-            </Label>
-            <Label layoutX="23.0" layoutY="14.0" text="Scheduler" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Button fx:id="testReturnButton" layoutX="33.0" layoutY="426.0" mnemonicParsing="false" onAction="#testReturnButtonHandleOnAction" prefHeight="67.0" prefWidth="146.0" style="-fx-background-color: #A9A9A9; -fx-background-radius: 5em; -fx-border-width: 10; -fx-border-color: #FFFFFF; -fx-border-radius: 5em;" text="Home Screen">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-               <effect>
-                  <DropShadow />
-               </effect></Button>
-            <Label layoutX="15.0" layoutY="135.0" prefHeight="35.0" prefWidth="175.0" text="2.) Enter Date" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="22.0" />
-               </font>
-            </Label>
-            <Label layoutX="15.0" layoutY="179.0" prefHeight="35.0" prefWidth="175.0" text="3.) Pick Time" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="22.0" />
-               </font>
-            </Label>
-            <Button fx:id="readMeButton" layoutX="14.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleReadMeButtonOnAction" prefHeight="87.0" prefWidth="175.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Read me!" textFill="WHITE">
-               <effect>
-                  <DropShadow />
-               </effect>
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Button>
-         </children>
-      </Pane>
-      <Label layoutX="386.0" layoutY="14.0" text="Create A Name For Your Event">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Label layoutX="377.0" layoutY="100.0" text="Select Which Day For Your Event">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Separator layoutX="232.0" layoutY="439.0" prefHeight="17.0" prefWidth="549.0" style="-fx-background-color: #002D62;" />
-      <Button layoutX="413.0" layoutY="466.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Schedule" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <RadioButton layoutX="266.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="7 AM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="367.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="8 AM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="468.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="9 AM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="568.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="10 AM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="672.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="11 AM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="266.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="12 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="568.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="3 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="367.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="1 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="468.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="2 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="672.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="4 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="266.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="5 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="367.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="6 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="468.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="7 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="568.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="8 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="672.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="9 PM">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </RadioButton>
-      <TextField fx:id="createEventTextField" layoutX="376.0" layoutY="41.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #002D62; -fx-border-width: 5;" />
-      <Separator layoutX="232.0" layoutY="230.0" prefHeight="17.0" prefWidth="549.0" style="-fx-background-color: #002D62;" />
-      <Button fx:id="mondayScheduleButton" layoutX="232.0" layoutY="154.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Monday" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <Button fx:id="tuesdayScheduleButton" layoutX="308.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Tuesday" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <Button fx:id="wednesdayScheduleButton" layoutX="387.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Wednesday" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <Button fx:id="thursdayScheduleButton" layoutX="486.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Thursday" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <Button fx:id="fridayScheduleButton" layoutX="568.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Friday" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <Button fx:id="saturdayScheduleButton" layoutX="636.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Saturday" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <Button fx:id="sundayScheduleButton" layoutX="717.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Sunday" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
-      </Button>
-      <Label layoutX="400.0" layoutY="203.0" text="Pick A Time For Your Event">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-   </children>
+    <children>
+        <Pane layoutY="-3.0" prefHeight="523.0" prefWidth="212.0" style="-fx-background-color: #002D62;">
+            <children>
+                <Label layoutX="15.0" layoutY="88.0" prefHeight="35.0" prefWidth="175.0" text="1.) Create Name" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="14.0" text="Scheduler" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="testReturnButton" layoutX="33.0" layoutY="426.0" mnemonicParsing="false" onAction="#testReturnButtonHandleOnAction" prefHeight="67.0" prefWidth="146.0" style="-fx-background-color: #A9A9A9; -fx-background-radius: 5em; -fx-border-width: 10; -fx-border-color: #FFFFFF; -fx-border-radius: 5em;" text="Home Screen">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Label layoutX="15.0" layoutY="135.0" prefHeight="35.0" prefWidth="175.0" text="2.) Enter Date" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="15.0" layoutY="179.0" prefHeight="35.0" prefWidth="175.0" text="3.) Pick Time" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Button fx:id="readMeButton" layoutX="14.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleReadMeButtonOnAction" prefHeight="87.0" prefWidth="175.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Read me!" textFill="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Label layoutX="386.0" layoutY="14.0" text="Create A Name For Your Event">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="377.0" layoutY="100.0" text="Select Which Day For Your Event">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Separator layoutX="232.0" layoutY="439.0" prefHeight="17.0" prefWidth="549.0" style="-fx-background-color: #002D62;" />
+        <Button layoutX="413.0" layoutY="466.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #002D62; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Schedule" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <RadioButton layoutX="266.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="7 AM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="367.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="8 AM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="468.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="9 AM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="568.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="10 AM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="672.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="11 AM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="266.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="12 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="568.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="3 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="367.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="1 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="468.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="2 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="672.0" layoutY="322.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="4 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="266.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="5 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="367.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="6 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="468.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="7 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="568.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="8 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="672.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-border-color: #002D62; -fx-border-radius: 5em; -fx-border-width: 5;" text="9 PM">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </RadioButton>
+        <TextField fx:id="createEventTextField" layoutX="376.0" layoutY="41.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #002D62; -fx-border-width: 5;" />
+        <Separator layoutX="232.0" layoutY="230.0" prefHeight="17.0" prefWidth="549.0" style="-fx-background-color: #002D62;" />
+        <Button fx:id="mondayScheduleButton" layoutX="232.0" layoutY="154.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Monday" textFill="WHITE">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="tuesdayScheduleButton" layoutX="308.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Tuesday" textFill="WHITE">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="wednesdayScheduleButton" layoutX="387.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Wednesday" textFill="WHITE">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="thursdayScheduleButton" layoutX="486.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Thursday" textFill="WHITE">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="fridayScheduleButton" layoutX="568.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Friday" textFill="WHITE">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="saturdayScheduleButton" layoutX="636.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Saturday" textFill="WHITE">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="sundayScheduleButton" layoutX="717.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5;" text="Sunday" textFill="WHITE">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Label layoutX="400.0" layoutY="203.0" text="Pick A Time For Your Event">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
 </AnchorPane>
