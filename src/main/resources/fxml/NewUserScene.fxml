@@ -37,7 +37,15 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="createNewUserButton" layoutX="230.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleCreateNewUserButton" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5; -fx-border-radius: 5em;" text="Create">
+            <Button fx:id="createNewUserButton" layoutX="417.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleCreateNewUserButton" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5; -fx-border-radius: 5em;" text="Create">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="returnNewUserButton" layoutX="43.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleReturnButtonOnAction" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-border-width: 5; -fx-border-radius: 5em;" text="Return">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

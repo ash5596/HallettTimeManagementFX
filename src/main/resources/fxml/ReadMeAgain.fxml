@@ -15,7 +15,7 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="28.0" layoutY="61.0" prefHeight="175.0" prefWidth="404.0" text="In a perfect world the user would be able to add the details of their event to each column in the table. For demonstration puporses I added events and scheduled them manually to show how it would work. This is what I was trying to do in events and events controller classes." textFill="WHITE" wrapText="true">
+            <Label layoutX="28.0" layoutY="48.0" prefHeight="188.0" prefWidth="404.0" text="I was unable to correctly populate the week view scene. Which in theory would populate labels based on the attributes that are specified when the user creates an event in the schduler. To demonstrate this, I pre populated the week scene with the events created." textFill="WHITE" wrapText="true">
                <font>
                   <Font size="18.0" />
                </font>

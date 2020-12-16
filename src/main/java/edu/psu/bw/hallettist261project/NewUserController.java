@@ -62,6 +62,7 @@ public class NewUserController {
     }
 
     @FXML
+    //Method to handle the user clicking on the return button -- bring them back to original login scene
     void handleReturnButtonOnAction(ActionEvent event) throws IOException {
         System.out.println("----------LOGIN BUTTON PRESSED----------");
         //Loading the new screen once the login button is pressed

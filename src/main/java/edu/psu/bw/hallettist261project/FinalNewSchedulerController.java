@@ -8,7 +8,6 @@ package edu.psu.bw.hallettist261project;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -19,13 +18,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.SelectionMode;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class FinalNewSchedulerController implements Initializable {
@@ -61,6 +59,30 @@ public class FinalNewSchedulerController implements Initializable {
     @FXML
     private Button deleteButton;
 
+    @FXML
+    private VBox mondayVBoxOne, tuesdayVBoxOne, wednesdayVBoxOne, thursdayVBoxOne, fridayVBoxOne, saturdayVBoxOne, sundayVBoxOne;
+
+    @FXML
+    private Label mondayLabelOne, mondayLabelTwo, mondayLabelThree, mondayLabelFour;
+
+    @FXML
+    private Label tuesdayLabelOne, tuesdayLabelTwo, tuesdayLabelThree, tuesdayLabelFour;
+
+    @FXML
+    private Label wednesdayLabelOne, wednesdayLabelTwo, wednesdayLabelThree, wednesdayLabelFour;
+
+    @FXML
+    private Label thursdayLabelOne, thursdayLabelTwo, thursdayLabelThree, thursdayLabelFour;
+
+    @FXML
+    private Label fridayLabelOne, fridayLabelTwo, fridayLabelThree, fridayLabelFour;
+
+    @FXML
+    private Label saturdayLabelOne, saturdayLabelTwo, saturdayLabelThree, saturdayLabelFour;
+
+    @FXML
+    private Label sundayLabelOne, sundayLabelTwo, sundayLabelThree, sundayLabelFour;
+
     //Initializing the scene
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -93,6 +115,90 @@ public class FinalNewSchedulerController implements Initializable {
         Stage newScheduleWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
         newScheduleWindow.setScene(newScheduleScene);
         newScheduleWindow.show();
+
+        eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
+            if (addEventDayText.getText() == "Monday") {
+                if (newVal != null) {
+                    mondayLabelOne.setText(newVal.getEventName());
+                    mondayLabelTwo.setText(newVal.getEventDay());
+                    mondayLabelThree.setText(newVal.getEventTime());
+                    mondayLabelFour.setText(newVal.getEventType());
+
+                }
+            }
+        });
+
+        eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
+            if (addEventDayText.getText() == "Tuesday") {
+                if (newVal != null) {
+                    tuesdayLabelOne.setText(newVal.getEventName());
+                    tuesdayLabelTwo.setText(newVal.getEventDay());
+                    tuesdayLabelThree.setText(newVal.getEventTime());
+                    tuesdayLabelFour.setText(newVal.getEventType());
+
+                }
+            }
+        });
+
+        eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
+            if (addEventDayText.getText() == "Wednesday") {
+                if (newVal != null) {
+                    mondayLabelOne.setText(newVal.getEventName());
+                    mondayLabelTwo.setText(newVal.getEventDay());
+                    mondayLabelThree.setText(newVal.getEventTime());
+                    mondayLabelFour.setText(newVal.getEventType());
+
+                }
+            }
+        });
+
+        eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
+            if (addEventDayText.getText() == "Thursday") {
+                if (newVal != null) {
+                    mondayLabelOne.setText(newVal.getEventName());
+                    mondayLabelTwo.setText(newVal.getEventDay());
+                    mondayLabelThree.setText(newVal.getEventTime());
+                    mondayLabelFour.setText(newVal.getEventType());
+
+                }
+            }
+        });
+
+        eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
+            if (addEventDayText.getText() == "Friday") {
+                if (newVal != null) {
+                    mondayLabelOne.setText(newVal.getEventName());
+                    mondayLabelTwo.setText(newVal.getEventDay());
+                    mondayLabelThree.setText(newVal.getEventTime());
+                    mondayLabelFour.setText(newVal.getEventType());
+
+                }
+            }
+        });
+
+        eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
+            if (addEventDayText.getText() == "Saturday") {
+                if (newVal != null) {
+                    mondayLabelOne.setText(newVal.getEventName());
+                    mondayLabelTwo.setText(newVal.getEventDay());
+                    mondayLabelThree.setText(newVal.getEventTime());
+                    mondayLabelFour.setText(newVal.getEventType());
+
+                }
+            }
+        });
+
+        eventTable.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
+            if (addEventDayText.getText() == "Sunday") {
+                if (newVal != null) {
+                    mondayLabelOne.setText(newVal.getEventName());
+                    mondayLabelTwo.setText(newVal.getEventDay());
+                    mondayLabelThree.setText(newVal.getEventTime());
+                    mondayLabelFour.setText(newVal.getEventType());
+
+                }
+            }
+        });
 
     }
 
@@ -137,7 +243,7 @@ public class FinalNewSchedulerController implements Initializable {
 
         //Get the data from the 
         eventTable.getItems().add(newEvents);
-        
+
         //Clearing the text from the textfields that was already entered into the table
         //Allows clean text field for user to type next event into 
         addEventNameText.clear();
@@ -155,7 +261,7 @@ public class FinalNewSchedulerController implements Initializable {
         //Will specify the rows that are selected by the user 
         selectedRows = eventTable.getSelectionModel().getSelectedItems();
         //Loop that will go through the rows and take away the event objects from the table
-        for(Events events: selectedRows) {
+        for (Events events : selectedRows) {
             allEvents.remove(events);
         }
 

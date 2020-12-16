@@ -46,7 +46,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Button fx:id="weekReturnButton" layoutX="347.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleWeekReturnHomeButton" prefHeight="37.0" prefWidth="133.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Home Screen" textFill="WHITE">
+            <Button fx:id="weekReturnButton" layoutX="334.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleWeekReturnHomeButton" prefHeight="37.0" prefWidth="133.0" style="-fx-background-color: #002D62; -fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Home Screen" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

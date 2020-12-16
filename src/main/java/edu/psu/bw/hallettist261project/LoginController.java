@@ -66,7 +66,7 @@ public class LoginController implements Initializable {
 
     @FXML
     public void handleLoginButtonOnAction(ActionEvent event) throws IOException {
-        //Checking if the username and password are correct
+        //Checking if the username and password are correct       
         if (userBox.getText().equals("Andrew") && passBox.getText().equals("pass")) {
             System.out.println("----------LOGIN BUTTON PRESSED----------");
             //Loading the new screen once the login button is pressed
@@ -115,5 +115,5 @@ public class LoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         //this.loginImage = new ImageView("Images/calendar-image-png-3.jpg");
     }
-
+    
 }

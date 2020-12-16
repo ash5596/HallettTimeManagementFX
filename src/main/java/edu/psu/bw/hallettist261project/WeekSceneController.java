@@ -30,13 +30,13 @@ public class WeekSceneController {
     private Button weekReturnButton;
 
     @FXML
-    private Label mondayLabelOne;
+    Label mondayLabelOne;
 
     @FXML
-    private Label mondayLabelTwo;
+    Label mondayLabelTwo;
 
     @FXML
-    private Label mondayLabelThree;
+    Label mondayLabelThree;
 
     @FXML
     TextField createEventTextField;
@@ -72,4 +72,31 @@ public class WeekSceneController {
         //closing the scene
         stage.close();
     }
+
+    public Label getMondayLabelOne() {
+        return mondayLabelOne;
+    }
+
+    public Label getMondayLabelTwo() {
+        return mondayLabelTwo;
+    }
+
+    public Label getMondayLabelThree() {
+        return mondayLabelThree;
+    }
+
+    public void setMondayLabelOne(Label mondayLabelOne) {
+        this.mondayLabelOne = mondayLabelOne;
+    }
+
+    public void setMondayLabelTwo(Label mondayLabelTwo) {
+        this.mondayLabelTwo = mondayLabelTwo;
+    }
+
+    public void setMondayLabelThree(Label mondayLabelThree) {
+        this.mondayLabelThree = mondayLabelThree;
+    }
+    
+    
+    
 }
